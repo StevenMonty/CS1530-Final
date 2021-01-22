@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "frontend": "file:frontend"
+  },
+  "scripts": {
+    "react": "npm --prefix ./frontend start",
+    "django": "python manage.py runserver",
+    "app": "npm run react & npm run django"
+  }
+}
