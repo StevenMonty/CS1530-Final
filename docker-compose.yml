@@ -1,0 +1,21 @@
+version: "2"
+
+networks:
+    default:
+        ipam:
+            config:
+                - subnet: 172.32.0.0/16
+
+services:
+    django:
+        build:
+            context: .
+            dockerfile: deploy/Django/Dockerfile
+        ports:
+            - "8000:8000"
+        networks:
+            default:
+                ipv4_address: 172.32.0.100
+        volumes:
+            - ./:/django_app
+        
