@@ -4,9 +4,11 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from rest_framework import status, permissions
-
+import logging
 from .models import Student
 from .serializers import *
+
+logger = logging.getLogger(__name__)
 
 
 @api_view(['GET'])
@@ -37,6 +39,7 @@ class UserList(APIView):
 
 @api_view(['GET', 'POST'])
 def students_list(request):
+    logger.debug(f'student_list req: {request}')
     if request.method == 'GET':
         data = Student.objects.all()
 
