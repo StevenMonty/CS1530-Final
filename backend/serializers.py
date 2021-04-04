@@ -23,7 +23,7 @@ class MediaSerializer(serializers.ModelSerializer):
         model = Media
         fields = ('title', 'author', 'description')
 
-class ReviewSerializer(serializer.ModelSerializer):
+class ReviewSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = Review

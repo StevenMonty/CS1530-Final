@@ -33,8 +33,8 @@ class Media(models.Model):
 
 
 class Review(models.Model):
-    media = models.ForeignKey(Media)
-    poster = models.ForeignKey(User)
+    media = models.ForeignKey(Media, on_delete=models.DO_NOTHING) # !! probably change this from DO_NOTHING 
+    poster = models.ForeignKey(User, on_delete=models.DO_NOTHING)
     body = models.CharField("Body", max_length=500)
     rating = models.IntegerField(default=0)
 

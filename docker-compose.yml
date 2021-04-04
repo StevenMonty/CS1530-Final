@@ -23,7 +23,8 @@ services:
         build:
             context: .
             dockerfile: deploy/Node/Dockerfile
-        #ports: ???
+        ports: 
+            - "3000:3000"
         networks:
             default:
                 ipv4_address: 172.32.0.101
