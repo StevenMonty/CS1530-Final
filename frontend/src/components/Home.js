@@ -13,11 +13,15 @@ class Home extends Component {
   };
 
   componentDidMount() {
+    axios.defaults.headers.common = { Authorization: `JWT ${localStorage.getItem('JWT')}`}
     this.resetState();
   }
 
   getStudents = () => {
-    axios.get(API_URL).then(res => this.setState({ students: res.data }));
+      axios.get(API_URL)
+        .then(res => {
+          this.setState({ students: res.data });
+        });
   };
 
   resetState = () => {
@@ -26,7 +30,7 @@ class Home extends Component {
 
   render() {
     return (
-      <Container style={{ marginTop: "20px" }}>
+      <Container style={{ marginTop: "5px" }}>
         <Row>
           <Col>
             <StudentList

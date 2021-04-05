@@ -5,7 +5,16 @@ import NavBar from "./components/NavBar.js";
 import Feed from "./components/Feed.js"
 
 class App extends Component {
-  render() {
+
+    componentDidMount() {
+        this.initState();
+    }
+
+    initState = () => {
+        this.setState({loggedIn: false});
+    };
+
+    render() {
     return (
       <Fragment>
         <NavBar/>
