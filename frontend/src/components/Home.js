@@ -13,7 +13,7 @@ class Home extends Component {
   };
 
   componentDidMount() {
-    axios.defaults.headers.common = { Authorization: `JWT ${localStorage.getItem('JWT')}`}
+
     this.resetState();
   }
 
