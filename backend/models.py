@@ -1,6 +1,21 @@
 from django.db import models
 
 
+class LibrosProfile(models.Model):
+    pass
+
+
+class Media(models.Model):
+    title = models.TextField(max_length=100)
+    author = models.TextField(max_length=100)
+    poster = models.ImageField()
+
+
+class Rating(models.Model):
+    media = models.ForeignKey(Media, on_delete=models.DO_NOTHING)
+    stars = models.IntegerField(default=0)
+
+
 class Student(models.Model):
     name = models.CharField("Name", max_length=240)
     email = models.EmailField()
