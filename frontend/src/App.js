@@ -1,12 +1,13 @@
 import React, { Component, Fragment } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
+import NavBar from "./components/NavBar.js";
 
 class App extends Component {
   render() {
     return (
       <Fragment>
-        <Header />
+        <NavBar/>
         <Home />
       </Fragment>
     );
