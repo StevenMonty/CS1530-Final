@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 from django.contrib.auth.models import User
+from .models import *
 # from .models import Student
 
 
@@ -35,3 +36,9 @@ class UserSerializerWithToken(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('token', 'username', 'password')
+
+class LibrosProfileSerializer(serializers.ModelSerializer):
+    
+    class Meta:
+        model = LibrosProfile
+        fields = ('user', 'friends')

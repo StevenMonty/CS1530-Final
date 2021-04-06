@@ -7,6 +7,7 @@ from rest_framework import status, permissions
 import logging
 # from .models import Student
 from .serializers import *
+from .models import *
 
 logger = logging.getLogger(__name__)
 
@@ -20,6 +21,29 @@ def current_user(request):
     serializer = UserSerializer(request.user)
     return Response(serializer.data)
 
+@api_view(['POST'])
+def get_user(request):
+    """
+    Return the user specified by id (the requested user pk)
+    """
+    pk = request.POST.id # Not sure what request param this should be
+    profile = LibrosProfile.objects.get(pk=pk)
+    serializer = LibrosProfileSerializer(profile)
+    return Response(serializer.data)
+
+@api_view(['POST'])
+def add_friend(request):
+    user = request.user
+    # again, not sure how frontend will identify users
+    friend_pk = request.POST.get("friend_pk")
+    friend_profile = LibrosProfile.objects.get(pk=friend_pk)
+
+    user.friends.add(friend_profile)
+    user.save()
+
+    # not sure what to return
+    return 1
+    
 
 class UserList(APIView):
     """
