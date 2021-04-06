@@ -1,4 +1,5 @@
 # Libros
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/18b62f99080d4618bfe69376462b7d00)](https://www.codacy.com/gh/StevenMonty/CS1530-Final/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=StevenMonty/CS1530-Final&amp;utm_campaign=Badge_Grade)
 
 ## Run Locally
 1. Run `./initEnv.sh`
