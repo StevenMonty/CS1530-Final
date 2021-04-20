@@ -1,0 +1,224 @@
+2021-04-20 03:09:38,197 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:10:17,567 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:10:17,983 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:10:23,261 backend.views: search{}:DEBUG: Search res, users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 1, 'lib_size': 1})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 1, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 0, 'lib_size': 0})])], media: [OrderedDict([('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV')])]
+2021-04-20 03:10:23,269 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 627
+2021-04-20 03:12:22,707 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:12:23,173 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:12:28,662 django.request: log_response{}:ERROR: Internal Server Error: /api/user/add_friend/
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 80, in add_friend
+    friend_profile = LibrosProfile.objects.get(pk=friend_pk) if friend_pk else None
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+backend.models.LibrosProfile.DoesNotExist: LibrosProfile matching query does not exist.
+2021-04-20 03:12:28,665 django.server: log_message{}:ERROR: "POST /api/user/add_friend/ HTTP/1.1" 500 101597
+2021-04-20 03:13:10,938 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:13:11,459 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:13:26,238 django.server: log_message{}:INFO: "GET /admin/backend/librosprofile/ HTTP/1.1" 200 7204
+2021-04-20 03:13:26,428 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 03:13:28,199 django.server: log_message{}:INFO: "GET /admin/backend/librosprofile/6/change/ HTTP/1.1" 200 8215
+2021-04-20 03:13:28,325 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 03:15:34,704 django.request: log_response{}:ERROR: Internal Server Error: /api/user/add_friend/
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 80, in add_friend
+    friend_profile = LibrosProfile.objects.get(pk=friend_id) if friend_id else None
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+backend.models.LibrosProfile.DoesNotExist: LibrosProfile matching query does not exist.
+2021-04-20 03:15:34,707 django.server: log_message{}:ERROR: "POST /api/user/add_friend/ HTTP/1.1" 500 101597
+2021-04-20 03:15:42,603 django.request: log_response{}:ERROR: Internal Server Error: /api/user/add_friend/
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 80, in add_friend
+    friend_profile = LibrosProfile.objects.get(pk=friend_id) if friend_id else None
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/query.py", line 429, in get
+    raise self.model.DoesNotExist(
+backend.models.LibrosProfile.DoesNotExist: LibrosProfile matching query does not exist.
+2021-04-20 03:15:42,604 django.server: log_message{}:ERROR: "POST /api/user/add_friend/ HTTP/1.1" 500 101600
+2021-04-20 03:15:55,973 backend.views: add_friend{}:DEBUG: req user: smontalbano, req: {'friend_id': 6}, friend_id: 6, friend_instance: montalbano
+2021-04-20 03:15:56,018 django.request: log_response{}:ERROR: Internal Server Error: /api/user/add_friend/
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 84, in add_friend
+    user.friends.add(friend_profile)
+AttributeError: 'User' object has no attribute 'friends'
+2021-04-20 03:15:56,019 django.server: log_message{}:ERROR: "POST /api/user/add_friend/ HTTP/1.1" 500 92662
+2021-04-20 03:17:34,933 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:17:35,574 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:17:45,100 backend.views: add_friend{}:DEBUG: req user: smontalbano, req: {'friend_name': 'montalbano'}, friend_id: None, friend_instance: None
+2021-04-20 03:17:45,152 django.request: log_response{}:ERROR: Internal Server Error: /api/user/add_friend/
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'int'>`
+2021-04-20 03:17:45,154 django.server: log_message{}:ERROR: "POST /api/user/add_friend/ HTTP/1.1" 500 75066
+2021-04-20 03:19:05,540 backend.views: add_friend{}:DEBUG: req user: smontalbano, req: {'friend_username': 'montalbano'}, friend_id: montalbano, friend_instance: montalbano
+2021-04-20 03:19:05,577 django.request: log_response{}:ERROR: Internal Server Error: /api/user/add_friend/
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 511, in dispatch
+    self.response = self.finalize_response(request, response, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 423, in finalize_response
+    assert isinstance(response, HttpResponseBase), (
+AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'int'>`
+2021-04-20 03:19:05,578 django.server: log_message{}:ERROR: "POST /api/user/add_friend/ HTTP/1.1" 500 75066
+2021-04-20 03:19:43,503 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:19:44,068 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:19:57,709 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:19:58,268 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:20:02,260 backend.views: add_friend{}:DEBUG: req user: smontalbano, req: {'friend_username': 'montalbano'}, friend_id: montalbano, friend_instance: montalbano
+2021-04-20 03:20:02,260 django.server: log_message{}:INFO: "POST /api/user/add_friend/ HTTP/1.1" 200 15
+2021-04-20 03:20:35,663 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:20:36,412 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:22:04,920 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:22:05,413 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:22:15,269 django.server: log_message{}:INFO: "GET /api/profile/1 HTTP/1.1" 200 385
+2021-04-20 03:22:39,484 backend.views: add_friend{}:DEBUG: req user: smontalbano, req: {'friend_username': 'montalbano'}, friend_id: montalbano, friend_instance: montalbano
+2021-04-20 03:22:39,490 django.server: log_message{}:INFO: "POST /api/user/add_friend/ HTTP/1.1" 200 15
+2021-04-20 03:22:44,413 django.server: log_message{}:INFO: "GET /api/profile/1 HTTP/1.1" 200 486
+2021-04-20 03:22:51,814 django.server: log_message{}:INFO: "GET /api/profile/6 HTTP/1.1" 200 173
+2021-04-20 03:23:39,262 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:23:39,706 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:23:42,040 django.server: log_message{}:INFO: "GET /api/profile/6 HTTP/1.1" 200 173
+2021-04-20 03:23:44,885 backend.views: add_friend{}:DEBUG: req user: smontalbano, req: {'friend_username': 'montalbano'}, friend_id: montalbano, friend_instance: montalbano
+2021-04-20 03:23:44,892 django.server: log_message{}:INFO: "POST /api/user/add_friend/ HTTP/1.1" 200 15
+2021-04-20 03:23:49,011 django.server: log_message{}:INFO: "GET /api/profile/6 HTTP/1.1" 200 298
+2021-04-20 03:24:59,232 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:24:59,682 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:28:38,306 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:28:38,883 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:29:00,162 django.request: log_response{}:WARNING: Not Found: /api/user/add_friend/
+2021-04-20 03:29:00,165 django.server: log_message{}:WARNING: "POST /api/user/add_friend/?username=montalbano HTTP/1.1" 404 3346
+2021-04-20 03:30:07,901 backend.views: add_friend{}:DEBUG: smontalbano added montalbano as a friend
+2021-04-20 03:30:07,912 django.server: log_message{}:INFO: "POST /api/user/add_friend/montalbano HTTP/1.1" 200 15
+2021-04-20 03:31:59,319 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 03:31:59,970 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:36:36,765 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:36:37,502 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:37:03,093 backend.views: add_friend{}:DEBUG: smontalbano added montalbano as a friend
+2021-04-20 03:37:03,134 django.server: log_message{}:INFO: "POST /api/user/add_friend/montalbano HTTP/1.1" 200 15
+2021-04-20 03:37:10,435 django.server: log_message{}:INFO: "GET /api/profile/montalbano HTTP/1.1" 200 298
+2021-04-20 03:37:17,312 django.server: log_message{}:INFO: "GET /api/profile/smontalbano HTTP/1.1" 200 486
+2021-04-20 03:41:03,667 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 03:41:04,258 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:41:15,828 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 03:41:16,245 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:41:19,777 django.request: log_response{}:WARNING: Not Found: /users
+2021-04-20 03:41:19,777 django.server: log_message{}:WARNING: "GET /users HTTP/1.1" 404 2180
+2021-04-20 03:41:27,492 django.request: log_response{}:WARNING: Not Found: /users/
+2021-04-20 03:41:27,493 django.server: log_message{}:WARNING: "GET /users/ HTTP/1.1" 404 2183
+2021-04-20 03:41:37,714 django.request: log_response{}:WARNING: Method Not Allowed: /api/users/
+2021-04-20 03:41:37,714 django.server: log_message{}:WARNING: "GET /api/users/ HTTP/1.1" 405 40
+2021-04-20 03:41:51,534 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:41:51,972 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:41:54,583 django.request: log_response{}:WARNING: Method Not Allowed: /api/profile/smontalbano
+2021-04-20 03:41:54,586 django.server: log_message{}:WARNING: "POST /api/profile/smontalbano HTTP/1.1" 405 41
+2021-04-20 03:41:59,179 django.server: log_message{}:INFO: "GET /api/profile/smontalbano HTTP/1.1" 200 486
+2021-04-20 03:42:51,034 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 03:42:51,675 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:43:51,656 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 03:43:52,296 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:43:57,935 backend.views: add_friend{}:DEBUG: smontalbano added montalbano as a friend
+2021-04-20 03:43:57,948 django.server: log_message{}:INFO: "POST /api/users/add_friend/montalbano HTTP/1.1" 200 72
+2021-04-20 03:44:53,475 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 03:44:53,899 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 03:44:56,394 backend.views: add_friend{}:DEBUG: smontalbano added montalbano as a friend
+2021-04-20 03:44:56,432 django.server: log_message{}:INFO: "POST /api/users/add_friend/montalbano HTTP/1.1" 200 84
+2021-04-20 03:45:03,316 django.server: log_message{}:INFO: "GET /admin/backend/librosprofile/ HTTP/1.1" 200 7204
+2021-04-20 03:45:03,488 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 03:45:08,869 backend.views: add_friend{}:DEBUG: smontalbano added admin as a friend
+2021-04-20 03:45:08,878 django.server: log_message{}:INFO: "POST /api/users/add_friend/admin HTTP/1.1" 200 79

@@ -12,7 +12,8 @@ class App extends Component {
         token: '',
         username: '',
         fName: '',
-        lName: ''
+        lName: '',
+        id:0
     }
 
     componentWillMount() {
@@ -28,6 +29,7 @@ class App extends Component {
                 username: data.user.username,
                 fName: data.user.first_name,
                 lName: data.user.last_name,
+                id: data.user.pk,
             });
             localStorage.setItem('JWT', data.JWT);  // TODO remove this from localStorage on logout
             axios.defaults.headers.common = { Authorization: `JWT ${data.JWT}`}
@@ -37,6 +39,7 @@ class App extends Component {
                 username: data.username,
                 fName: data.first_name,
                 lName: data.last_name,
+                id: data.pk,
             });
         }
     }
@@ -60,7 +63,11 @@ class App extends Component {
             console.log('LOGGED IN!')
             this.setState({token: localStorage.getItem('JWT')})
             axios.defaults.headers.common = { Authorization: `JWT ${localStorage.getItem('JWT')}`}
-            axios.get(CUR_USER).then(res => this.parseCurUser(res.data, false));
+            axios.get(CUR_USER,{
+                headers: {
+                    Authorization: `JWT ${localStorage.getItem('JWT')}`
+                }
+            }).then(res => this.parseCurUser(res.data, false));
 
         }
 

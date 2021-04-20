@@ -23,5 +23,4 @@ urlpatterns = [
     path('token-auth/', obtain_jwt_token),
     path('admin/', admin.site.urls),
     path('api/', include('backend.urls')),
-
 ]
