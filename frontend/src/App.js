@@ -7,6 +7,7 @@ import axios from "axios";
 import {CUR_USER, GET_TOKEN} from "./constants";
 import CreatePost from "./components/CreatePost"
 import SearchMovie from "./components/SearchMovie"
+import Main from "./components/Main"
 
 class App extends Component {
     state = {
@@ -79,7 +80,7 @@ class App extends Component {
     return (
       <Fragment>
         <NavBar user={this.state}/>
-        <SearchMovie/>
+        <Main/>
       </Fragment>
     );
   }

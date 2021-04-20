@@ -15,6 +15,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import AddIcon from '@material-ui/icons/Add';
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -158,33 +159,21 @@ const NavBar = (props) => {
     <div className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="open drawer"
-          >
-            <MenuIcon />
-          </IconButton>
+          <Link to="/" style={{ textDecoration: 'none' }}>
           <Typography className={classes.title} variant="h6" noWrap>
             Libros
           </Typography>
-          <div className={classes.search}>
-            <div className={classes.searchIcon}>
-              <SearchIcon />
-            </div>
-            <InputBase
-              placeholder="Search…"
-              classes={{
-                root: classes.inputRoot,
-                input: classes.inputInput,
-              }}
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </div>
+          </Link>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
+            <Link to="/search" style={{ textDecoration: 'none' }}>
+              <IconButton aria-label="Go to search" color="inherit">
+                <Badge color="secondary">
+                  <SearchIcon />
+                </Badge>
+              </IconButton>
+            </Link>
+            <IconButton aria-label="add a post" color="inherit">
               <Badge color="secondary">
                 <AddIcon />
               </Badge>
