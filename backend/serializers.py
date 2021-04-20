@@ -1,15 +1,14 @@
 from rest_framework import serializers
 from rest_framework_jwt.settings import api_settings
 from django.contrib.auth.models import User
-from .models import *
-# from .models import Student
+from .models import Student
 
 
 class UserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ('pk', 'username', 'first_name', 'last_name')
+        fields = ('username', 'first_name', 'last_name')
 
 
 class UserSerializerWithToken(serializers.ModelSerializer):
@@ -38,24 +37,8 @@ class UserSerializerWithToken(serializers.ModelSerializer):
         fields = ('token', 'username', 'password')
 
 
-class LibrosProfileSerializer(serializers.ModelSerializer):
-    
-    class Meta:
-        model = LibrosProfile
-        fields = ('details', 'friends_list', 'library')
-
-
-class LibrosSearchSerializer(serializers.ModelSerializer):
+class StudentSerializer(serializers.ModelSerializer):
 
     class Meta:
-        model = LibrosProfile
-        fields = ('details',)
-
-
-class MediaSerializer(serializers.ModelSerializer):
-
-    class Meta:
-        model = Media
-        fields = ('title', 'author', 'year', 'media_type')
-
-
+        model = Student 
+        fields = ('pk', 'name', 'email', 'document', 'phone', 'registrationDate')

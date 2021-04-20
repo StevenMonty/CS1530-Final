@@ -271,3 +271,605 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2021-04-20 04:18:24,863 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
 2021-04-20 04:26:59,271 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
 2021-04-20 04:26:59,931 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:01:50,042 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:02:16,058 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:02:16,427 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:02:32,119 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:02:32,450 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:02:36,296 django.request: log_response{}:WARNING: Not Found: /
+2021-04-20 05:02:36,296 django.server: log_message{}:WARNING: "GET / HTTP/1.1" 404 2059
+2021-04-20 05:02:36,344 django.request: log_response{}:WARNING: Not Found: /favicon.ico
+2021-04-20 05:02:36,344 django.server: log_message{}:WARNING: "GET /favicon.ico HTTP/1.1" 404 2110
+2021-04-20 05:02:40,284 django.request: log_response{}:WARNING: Not Found: /api
+2021-04-20 05:02:40,284 django.server: log_message{}:WARNING: "GET /api HTTP/1.1" 404 2086
+2021-04-20 05:02:43,398 django.request: log_response{}:WARNING: Not Found: /api/
+2021-04-20 05:02:43,398 django.server: log_message{}:WARNING: "GET /api/ HTTP/1.1" 404 3198
+2021-04-20 05:02:49,723 django.request: log_response{}:WARNING: Unauthorized: /api/search_movies/orange
+2021-04-20 05:02:49,723 django.server: log_message{}:WARNING: "GET /api/search_movies/orange HTTP/1.1" 401 5163
+2021-04-20 05:02:49,769 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+2021-04-20 05:02:49,769 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3385
+2021-04-20 05:02:49,771 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+2021-04-20 05:02:49,773 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3597
+2021-04-20 05:02:49,775 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+2021-04-20 05:02:49,776 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1719
+2021-04-20 05:02:49,776 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+2021-04-20 05:02:49,777 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+2021-04-20 05:02:49,778 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 200 89476
+2021-04-20 05:02:49,778 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+2021-04-20 05:02:49,805 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+2021-04-20 05:03:06,945 django.request: log_response{}:WARNING: Method Not Allowed: /api/auth/login
+2021-04-20 05:03:06,946 django.server: log_message{}:WARNING: "GET /api/auth/login HTTP/1.1" 405 7698
+2021-04-20 05:03:06,998 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:03:06,998 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:03:06,999 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:03:06,999 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:03:07,001 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:03:07,002 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:03:07,002 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:03:07,002 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:03:07,003 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:03:07,005 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:03:07,020 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:03:13,421 django.server: log_message{}:INFO: "POST /api/auth/login HTTP/1.1" 200 8031
+2021-04-20 05:03:13,470 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:03:13,470 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:03:13,471 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:03:13,471 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:03:13,471 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:03:28,305 django.request: log_response{}:WARNING: Unauthorized: /api/search_movies/orange
+2021-04-20 05:03:28,305 django.server: log_message{}:WARNING: "GET /api/search_movies/orange HTTP/1.1" 401 5163
+2021-04-20 05:03:28,342 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:03:28,343 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:03:28,344 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:03:28,344 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:03:28,345 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:03:28,345 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:03:28,346 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:03:28,347 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:03:28,347 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:03:28,347 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:03:28,413 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:03:39,461 django.server: log_message{}:INFO: "GET /api/current_user HTTP/1.1" 301 0
+2021-04-20 05:03:39,486 django.request: log_response{}:WARNING: Unauthorized: /api/current_user/
+2021-04-20 05:03:39,486 django.server: log_message{}:WARNING: "GET /api/current_user/ HTTP/1.1" 401 5122
+2021-04-20 05:03:39,537 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:03:39,537 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:03:39,539 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:03:39,540 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:03:39,541 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:03:39,541 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:03:39,541 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:03:39,541 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:03:39,541 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:03:39,543 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:03:39,557 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:03:50,621 django.request: log_response{}:WARNING: Not Found: /api/auth
+2021-04-20 05:03:50,622 django.server: log_message{}:WARNING: "GET /api/auth HTTP/1.1" 404 3210
+2021-04-20 05:03:54,552 django.request: log_response{}:WARNING: Not Found: /api/auth/
+2021-04-20 05:03:54,553 django.server: log_message{}:WARNING: "GET /api/auth/ HTTP/1.1" 404 3213
+2021-04-20 05:03:57,819 django.request: log_response{}:WARNING: Method Not Allowed: /api/auth/login
+2021-04-20 05:03:57,820 django.server: log_message{}:WARNING: "GET /api/auth/login HTTP/1.1" 405 7698
+2021-04-20 05:03:57,872 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:03:57,874 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:03:57,874 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:03:57,875 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:03:57,877 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:03:57,877 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:03:57,878 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:03:57,880 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:03:57,880 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:03:57,880 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:03:57,899 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:04:17,074 django.request: log_response{}:WARNING: Method Not Allowed: /api/auth/login
+2021-04-20 05:04:17,075 django.server: log_message{}:WARNING: "GET /api/auth/login HTTP/1.1" 405 7698
+2021-04-20 05:04:17,119 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:04:17,119 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:04:17,120 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:04:17,122 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:04:17,122 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:04:17,122 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:04:17,122 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:04:17,124 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:04:17,125 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:04:17,126 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:04:17,143 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:04:30,021 django.request: log_response{}:WARNING: Unauthorized: /api/current_user/
+2021-04-20 05:04:30,021 django.server: log_message{}:WARNING: "GET /api/current_user/ HTTP/1.1" 401 5122
+2021-04-20 05:05:06,973 django.request: log_response{}:WARNING: Unauthorized: /api/current_user/
+2021-04-20 05:05:06,973 django.server: log_message{}:WARNING: "GET /api/current_user/ HTTP/1.1" 401 5122
+2021-04-20 05:05:07,014 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:05:07,016 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:05:07,016 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:05:07,017 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:05:07,017 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:05:07,018 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:05:07,018 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:05:07,021 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:05:07,021 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:05:07,021 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:05:07,074 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:05:31,224 django.request: log_response{}:WARNING: Not Found: /api/auth/search_movies/the great
+2021-04-20 05:05:31,225 django.server: log_message{}:WARNING: "GET /api/auth/search_movies/the%20great HTTP/1.1" 404 3284
+2021-04-20 05:05:38,550 django.request: log_response{}:WARNING: Not Found: /api/auth/search_movies/the
+2021-04-20 05:05:38,551 django.server: log_message{}:WARNING: "GET /api/auth/search_movies/the HTTP/1.1" 404 3264
+2021-04-20 05:05:45,627 django.request: log_response{}:WARNING: Unauthorized: /api/search_movies/the 
+2021-04-20 05:05:45,628 django.server: log_message{}:WARNING: "GET /api/search_movies/the%20 HTTP/1.1" 401 5161
+2021-04-20 05:05:45,666 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:05:45,667 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:05:45,668 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:05:45,668 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:05:45,669 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:05:45,670 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:05:45,671 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:05:45,673 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:05:45,673 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:05:45,673 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:05:45,728 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:05:53,670 django.request: log_response{}:WARNING: Method Not Allowed: /api/auth/login
+2021-04-20 05:05:53,671 django.server: log_message{}:WARNING: "GET /api/auth/login HTTP/1.1" 405 7698
+2021-04-20 05:05:59,694 django.server: log_message{}:INFO: "POST /api/auth/login HTTP/1.1" 200 8031
+2021-04-20 05:06:08,851 django.request: log_response{}:WARNING: Not Found: /api/
+2021-04-20 05:06:08,852 django.server: log_message{}:WARNING: "GET /api/ HTTP/1.1" 404 3198
+2021-04-20 05:06:14,615 django.request: log_response{}:WARNING: Not Found: /api/ current_user/
+2021-04-20 05:06:14,616 django.server: log_message{}:WARNING: "GET /api/%20current_user/ HTTP/1.1" 404 3242
+2021-04-20 05:06:17,365 django.request: log_response{}:WARNING: Unauthorized: /api/current_user/
+2021-04-20 05:06:17,365 django.server: log_message{}:WARNING: "GET /api/current_user/ HTTP/1.1" 401 5122
+2021-04-20 05:06:17,406 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:06:17,406 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:06:17,407 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:06:17,408 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:06:17,408 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:06:17,409 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:06:17,411 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:06:17,411 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:06:17,411 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:06:17,412 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:06:17,477 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:06:34,779 django.request: log_response{}:WARNING: Not Found: /api/auth/login/
+2021-04-20 05:06:34,779 django.server: log_message{}:WARNING: "GET /api/auth/login/ HTTP/1.1" 404 3231
+2021-04-20 05:06:44,115 django.request: log_response{}:WARNING: Method Not Allowed: /api/auth/login
+2021-04-20 05:06:44,116 django.server: log_message{}:WARNING: "GET /api/auth/login HTTP/1.1" 405 7698
+2021-04-20 05:06:44,164 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:06:44,165 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:06:44,165 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:06:44,165 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:06:44,166 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:06:44,167 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:06:44,169 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:06:44,170 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:06:44,171 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:06:44,171 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:06:44,190 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:06:47,250 django.server: log_message{}:INFO: "POST /api/auth/login HTTP/1.1" 200 8031
+2021-04-20 05:06:52,007 django.request: log_response{}:WARNING: Not Found: /api/
+2021-04-20 05:06:52,008 django.server: log_message{}:WARNING: "GET /api/ HTTP/1.1" 404 3198
+2021-04-20 05:06:58,416 django.request: log_response{}:WARNING: Not Found: /api/ current_user
+2021-04-20 05:06:58,417 django.server: log_message{}:WARNING: "GET /api/%20current_user HTTP/1.1" 404 3239
+2021-04-20 05:07:00,672 django.request: log_response{}:WARNING: Unauthorized: /api/current_user/
+2021-04-20 05:07:00,673 django.server: log_message{}:WARNING: "GET /api/current_user/ HTTP/1.1" 401 5122
+2021-04-20 05:07:07,831 django.request: log_response{}:WARNING: Unauthorized: /api/current_user/
+2021-04-20 05:07:07,832 django.server: log_message{}:WARNING: "GET /api/current_user/?format=json HTTP/1.1" 401 58
+2021-04-20 05:07:14,130 django.request: log_response{}:WARNING: Unauthorized: /api/current_user/
+2021-04-20 05:07:14,131 django.server: log_message{}:WARNING: "GET /api/current_user/?format=api HTTP/1.1" 401 5155
+2021-04-20 05:07:14,167 django.server: log_message{}:INFO: "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+2021-04-20 05:07:14,167 django.server: log_message{}:INFO: "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+2021-04-20 05:07:14,168 django.server: log_message{}:INFO: "GET /static/rest_framework/js/jquery-3.5.1.min.js HTTP/1.1" 304 0
+2021-04-20 05:07:14,168 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+2021-04-20 05:07:14,168 django.server: log_message{}:INFO: "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+2021-04-20 05:07:14,169 django.server: log_message{}:INFO: "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+2021-04-20 05:07:14,172 django.server: log_message{}:INFO: "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+2021-04-20 05:07:14,173 django.server: log_message{}:INFO: "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+2021-04-20 05:07:14,174 django.server: log_message{}:INFO: "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+2021-04-20 05:07:14,174 django.server: log_message{}:INFO: "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+2021-04-20 05:07:14,228 django.server: log_message{}:INFO: "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+2021-04-20 05:10:29,870 django.request: log_response{}:WARNING: Not Found: /api/login
+2021-04-20 05:10:29,871 django.server: log_message{}:WARNING: "GET /api/login HTTP/1.1" 404 3213
+2021-04-20 05:11:37,624 django.server: log_message{}:INFO: "GET /api/current_user HTTP/1.1" 301 0
+2021-04-20 05:11:37,629 django.request: log_response{}:WARNING: Unauthorized: /api/current_user/
+2021-04-20 05:11:37,630 django.server: log_message{}:WARNING: "GET /api/current_user/ HTTP/1.1" 401 58
+2021-04-20 05:11:49,701 django.server: log_message{}:INFO: "GET /api/current_user HTTP/1.1" 301 0
+2021-04-20 05:11:49,867 django.server: log_message{}:INFO: "GET /api/current_user/ HTTP/1.1" 200 69
+2021-04-20 05:12:57,397 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/orange
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 28, in search_movies
+    results = movie.search(query)
+  File "/usr/local/lib/python3.9/site-packages/tmdbv3api/objs/movie.py", line 222, in search
+    self._call(
+  File "/usr/local/lib/python3.9/site-packages/tmdbv3api/tmdb.py", line 125, in _call
+    raise TMDbException("No API key found.")
+tmdbv3api.exceptions.TMDbException: No API key found.
+2021-04-20 05:12:57,398 django.server: log_message{}:ERROR: "GET /api/search_movies/orange HTTP/1.1" 500 96461
+2021-04-20 05:14:12,485 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/urls.py changed, reloading.
+2021-04-20 05:14:12,867 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:14:28,331 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/urls.py changed, reloading.
+2021-04-20 05:14:28,725 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:14:41,861 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:15:00,262 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/orange
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 28, in search_movies
+    results = movie.search(query)
+  File "/usr/local/lib/python3.9/site-packages/tmdbv3api/objs/movie.py", line 222, in search
+    self._call(
+  File "/usr/local/lib/python3.9/site-packages/tmdbv3api/tmdb.py", line 125, in _call
+    raise TMDbException("No API key found.")
+tmdbv3api.exceptions.TMDbException: No API key found.
+2021-04-20 05:15:00,264 django.server: log_message{}:ERROR: "GET /api/search_movies/orange HTTP/1.1" 500 96461
+2021-04-20 05:16:45,493 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:16:45,911 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:16:55,768 django.server: log_message{}:INFO: "GET /api/search_movies/orange HTTP/1.1" 200 94
+2021-04-20 05:28:33,151 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:28:33,467 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:28:41,114 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/orange
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 43, in search_movies
+    'date':entry.date,
+AttributeError: 'AsObj' object has no attribute 'date'
+2021-04-20 05:28:41,117 django.server: log_message{}:ERROR: "GET /api/search_movies/orange HTTP/1.1" 500 94872
+2021-04-20 05:28:59,993 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:29:00,316 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:29:02,366 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/orange
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 47, in search_movies
+    return JsonResponse(ret)
+  File "/usr/local/lib/python3.9/site-packages/django/http/response.py", line 596, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+2021-04-20 05:29:02,368 django.server: log_message{}:ERROR: "GET /api/search_movies/orange HTTP/1.1" 500 107681
+2021-04-20 05:29:20,399 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:29:20,723 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:29:26,034 django.server: log_message{}:INFO: "GET /api/search_movies/orange HTTP/1.1" 200 2941
+2021-04-20 05:31:27,906 django.server: log_message{}:INFO: "GET /api/search_movies/black%20smoke HTTP/1.1" 200 299
+2021-04-20 05:32:52,457 django.server: log_message{}:INFO: "GET /api/search_movies/king HTTP/1.1" 200 3106
+2021-04-20 05:34:04,378 django.server: log_message{}:INFO: "GET /api/search_movies/orange HTTP/1.1" 200 2941
+2021-04-20 05:36:25,808 django.server: log_message{}:INFO: "GET /api/search_movies/Inglorious HTTP/1.1" 200 1141
+2021-04-20 05:39:38,685 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:39:39,026 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:39:43,448 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:39:43,775 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:39:53,376 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:39:53,710 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:54:03,402 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:54:03,716 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:54:11,155 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:54:11,454 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:54:18,298 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/Inglorious
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 48, in search_movies
+    return JsonResponse(sorted(movies, key = lambda i: i['release_date']), safe=False)
+  File "/django_app/backend/movies.py", line 48, in <lambda>
+    return JsonResponse(sorted(movies, key = lambda i: i['release_date']), safe=False)
+KeyError: 'release_date'
+2021-04-20 05:54:18,299 django.server: log_message{}:ERROR: "GET /api/search_movies/Inglorious HTTP/1.1" 500 98497
+2021-04-20 05:54:35,669 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:54:35,993 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:54:39,960 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/Inglorious
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 48, in search_movies
+    return JsonResponse(sorted(movies, key = lambda i: i.release_date), safe=False)
+  File "/django_app/backend/movies.py", line 48, in <lambda>
+    return JsonResponse(sorted(movies, key = lambda i: i.release_date), safe=False)
+AttributeError: 'dict' object has no attribute 'release_date'
+2021-04-20 05:54:39,961 django.server: log_message{}:ERROR: "GET /api/search_movies/Inglorious HTTP/1.1" 500 98775
+2021-04-20 05:57:15,908 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 05:57:16,225 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:57:19,571 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/Inglorious
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 48, in search_movies
+    return JsonResponse(sorted(movies, key = lambda i: i.date), safe=False)
+  File "/django_app/backend/movies.py", line 48, in <lambda>
+    return JsonResponse(sorted(movies, key = lambda i: i.date), safe=False)
+AttributeError: 'dict' object has no attribute 'date'
+2021-04-20 05:57:19,572 django.server: log_message{}:ERROR: "GET /api/search_movies/Inglorious HTTP/1.1" 500 98695
+2021-04-20 06:00:08,597 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:00:08,933 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:00:12,752 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/Inglorious
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 31, in search_movies
+    results = sorted(movie.search(query), lambda i: i['release_date'])
+TypeError: sorted expected 1 argument, got 2
+2021-04-20 06:00:12,753 django.server: log_message{}:ERROR: "GET /api/search_movies/Inglorious HTTP/1.1" 500 88257
+2021-04-20 06:00:37,402 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:00:37,763 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:00:40,733 django.server: log_message{}:INFO: "GET /api/search_movies/Inglorious HTTP/1.1" 200 1141
+2021-04-20 06:00:54,731 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:00:55,055 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:00:56,771 django.server: log_message{}:INFO: "GET /api/search_movies/Inglorious HTTP/1.1" 200 1141
+2021-04-20 06:02:29,155 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:02:29,467 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:14:15,557 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:14:15,879 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:14:21,235 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:14:21,578 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:15:53,660 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:15:53,951 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:16:16,023 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:16:16,331 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:16:37,685 django.server: log_message{}:INFO: "GET /api/search_movies/Inglorious HTTP/1.1" 200 1141
+2021-04-20 06:17:23,133 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/urls.py changed, reloading.
+2021-04-20 06:17:23,414 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:17:37,796 django.server: log_message{}:INFO: "GET /api/search_movie/The%20Inglorious%20Serfs HTTP/1.1" 200 15
+2021-04-20 06:17:53,382 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/blade
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 32, in search_movies
+    results = sorted(movie.search(query), key = lambda i: i['release_date'], reverse=True)
+  File "/django_app/backend/movies.py", line 32, in <lambda>
+    results = sorted(movie.search(query), key = lambda i: i['release_date'], reverse=True)
+  File "/usr/local/lib/python3.9/site-packages/tmdbv3api/as_obj.py", line 21, in __getitem__
+    return getattr(self, key)
+AttributeError: 'AsObj' object has no attribute 'release_date'
+2021-04-20 06:17:53,384 django.server: log_message{}:ERROR: "GET /api/search_movies/blade HTTP/1.1" 500 96958
+2021-04-20 06:18:47,560 django.server: log_message{}:INFO: "GET /api/search_movies/mouse HTTP/1.1" 200 3237
+2021-04-20 06:18:56,271 django.server: log_message{}:INFO: "GET /api/search_movies/river HTTP/1.1" 200 2961
+2021-04-20 06:19:09,892 django.server: log_message{}:INFO: "GET /api/search_movie/frozen HTTP/1.1" 200 15
+2021-04-20 06:19:36,529 django.server: log_message{}:INFO: "GET /api/search_movie/blade HTTP/1.1" 200 15
+2021-04-20 06:19:39,762 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/blade
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 32, in search_movies
+    results = sorted(movie.search(query), key = lambda i: i['release_date'], reverse=True)
+  File "/django_app/backend/movies.py", line 32, in <lambda>
+    results = sorted(movie.search(query), key = lambda i: i['release_date'], reverse=True)
+  File "/usr/local/lib/python3.9/site-packages/tmdbv3api/as_obj.py", line 21, in __getitem__
+    return getattr(self, key)
+AttributeError: 'AsObj' object has no attribute 'release_date'
+2021-04-20 06:19:39,763 django.server: log_message{}:ERROR: "GET /api/search_movies/blade HTTP/1.1" 500 96958
+2021-04-20 06:20:18,911 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:20:19,219 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:20:23,438 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/blade
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 32, in search_movies
+    results = sorted(movie.search(query), key = lambda i: i['release_date'], reverse=True)
+  File "/django_app/backend/movies.py", line 32, in <lambda>
+    results = sorted(movie.search(query), key = lambda i: i['release_date'], reverse=True)
+  File "/usr/local/lib/python3.9/site-packages/tmdbv3api/as_obj.py", line 21, in __getitem__
+    return getattr(self, key)
+AttributeError: 'AsObj' object has no attribute 'release_date'
+2021-04-20 06:20:23,440 django.server: log_message{}:ERROR: "GET /api/search_movies/blade HTTP/1.1" 500 96958
+2021-04-20 06:21:45,993 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:21:46,311 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:21:49,236 django.request: log_response{}:ERROR: Internal Server Error: /api/search_movies/blade
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.9/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/usr/local/lib/python3.9/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/django_app/backend/movies.py", line 49, in search_movies
+    'date':entry.release_date,
+AttributeError: 'AsObj' object has no attribute 'release_date'
+2021-04-20 06:21:49,237 django.server: log_message{}:ERROR: "GET /api/search_movies/blade HTTP/1.1" 500 95939
+2021-04-20 06:22:27,040 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:22:27,361 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:22:46,192 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:22:46,507 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:22:54,547 django.server: log_message{}:INFO: "GET /api/search_movies/blade HTTP/1.1" 200 2940
+2021-04-20 06:23:07,419 django.server: log_message{}:INFO: "GET /api/search_movie/Blade HTTP/1.1" 200 15
+2021-04-20 06:23:33,747 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:23:34,074 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:23:37,291 django.server: log_message{}:INFO: "GET /api/search_movie/Blade HTTP/1.1" 200 15
+2021-04-20 06:23:47,500 django.server: log_message{}:INFO: "GET /api/search_movie/Blade HTTP/1.1" 200 15
+2021-04-20 06:27:58,774 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:27:59,106 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:28:04,884 django.server: log_message{}:INFO: "GET /api/search_movie/Blade HTTP/1.1" 200 357
+2021-04-20 06:28:44,082 django.utils.autoreload: trigger_reload{}:INFO: /django_app/backend/movies.py changed, reloading.
+2021-04-20 06:28:44,398 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:28:46,261 django.server: log_message{}:INFO: "GET /api/search_movie/Blade HTTP/1.1" 200 357
+2021-04-20 06:28:49,550 django.server: log_message{}:INFO: "GET /api/search_movie/Bladefsd HTTP/1.1" 200 35
+2021-04-20 06:29:23,715 django.server: log_message{}:INFO: "GET /api/search_movie/Blade HTTP/1.1" 200 357
+2021-04-20 06:34:16,644 django.request: log_response{}:WARNING: Not Found: /api/search_movie/
+2021-04-20 06:34:16,645 django.server: log_message{}:WARNING: "GET /api/search_movie/ HTTP/1.1" 404 3418
+2021-04-20 06:34:18,616 django.server: log_message{}:INFO: "GET /api/search_movie/fa HTTP/1.1" 200 35
+2021-04-20 06:34:22,522 django.server: log_message{}:INFO: "GET /api/search_movies/fa HTTP/1.1" 200 3059
+2021-04-20 06:34:33,974 django.server: log_message{}:INFO: "GET /api/search_movies/Parker%20vs.%20Fa HTTP/1.1" 200 151
+2021-04-20 06:34:40,617 django.server: log_message{}:INFO: "GET /api/search_movie/Parker%20vs.%20Fa HTTP/1.1" 200 666
+2021-04-20 06:34:42,851 django.server: log_message{}:INFO: "GET /api/search_movies/Parker%20vs.%20Fa HTTP/1.1" 200 151
