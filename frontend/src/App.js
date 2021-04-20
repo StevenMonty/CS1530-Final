@@ -55,7 +55,7 @@ class App extends Component {
          */
         let loggedIn = localStorage.getItem('JWT') != null;
         if (!loggedIn){
-            let req = {git a
+            let req = {
                     username: "admin",
                     password: "root"
                 }
