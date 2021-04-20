@@ -52,3 +52,10 @@ class LibrosSearchSerializer(serializers.ModelSerializer):
         fields = ('details',)
 
 
+class MediaSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = Media
+        fields = ('title', 'author', 'year', 'media_type')
+
+

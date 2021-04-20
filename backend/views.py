@@ -10,6 +10,7 @@ import logging
 # from .models import Student
 from .serializers import *
 from .models import *
+from itertools import chain
 
 logger = logging.getLogger(__name__)
 
@@ -25,13 +26,35 @@ def current_user(request):
 
 
 @api_view(['GET'])
-def get_user(request, id):
+def get_user(request, username):
     """
     Return the user specified by id (the requested user pk)
     """
-    profile = LibrosProfile.objects.get(pk=id)
+    profile = LibrosProfile.objects.get(user__username=username)
     serializer = LibrosProfileSerializer(profile)
     return Response(serializer.data)
+
+
+@api_view(['GET'])
+def search(request, query):
+    users = LibrosProfile.objects.filter(
+            Q(user__email__contains=query) |
+            Q(user__first_name__contains=query) |
+            Q(user__last_name__contains=query) |
+            Q(user__username__contains=query)
+    )
+
+    media = Media.objects.filter(
+            Q(title__contains=query) | Q(author__contains=query)
+    )
+
+    # results = {
+    #     'users': LibrosSearchSerializer(users, many=True).data,
+    #     'media': MediaSerializer(media, many=True).data
+    # }
+    logger.debug(f'users: { LibrosSearchSerializer(users, many=True).data}, media: {MediaSerializer(media, many=True).data}')
+
+    return JsonResponse({'status': 200, 'users': LibrosSearchSerializer(users, many=True).data, 'media': MediaSerializer(media, many=True).data})
 
 
 @api_view(['GET'])
@@ -49,17 +72,23 @@ def search_user(request, query):
 
 
 @api_view(['POST'])
-def add_friend(request):
-    user = request.user
-    # again, not sure how frontend will identify users
-    friend_pk = request.POST.get("friend_pk")
-    friend_profile = LibrosProfile.objects.get(pk=friend_pk)
+def add_friend(request, username):
 
-    user.friends.add(friend_profile)
-    user.save()
+    friend_profile = LibrosProfile.objects.filter(user__username=username).first()
+
+    logger.debug(f'{request.user} added {friend_profile} as a friend')
+
+    # Update friend list from the requesting user side
+    cur_user = request.user.librosprofile
+    cur_user.friends.add(friend_profile)
+    cur_user.save()
+
+    # Update friend list from the requested user side
+    friend_profile.friends.add(cur_user)
+    friend_profile.save()
 
     # not sure what to return
-    return 1
+    return JsonResponse({'status': 200, 'message': f'{cur_user} successfully added {username} as a friend!'})
     
 
 class UserRegisterView(APIView):
@@ -78,22 +107,22 @@ class UserRegisterView(APIView):
             return JsonResponse({'status': 500, 'message': f'Error: {str(e)}'})
 
 
-class UserList(APIView):
-    """
-    Create a new user. It's called 'UserList' because normally we'd have a get
-    method here too, for retrieving a list of all User objects.
-    """
-
-    permission_classes = (permissions.AllowAny,)
-
-    def post(self, request, format=None):
-        serializer = UserSerializerWithToken(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-
+# class UserList(APIView):
+#     """
+#     Create a new user. It's called 'UserList' because normally we'd have a get
+#     method here too, for retrieving a list of all User objects.
+#     """
+#
+#     permission_classes = (permissions.AllowAny,)
+#
+#     def post(self, request, format=None):
+#         serializer = UserSerializerWithToken(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data, status=status.HTTP_201_CREATED)
+#         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+#
+#
 
 
 # @api_view(['GET', 'POST'])
