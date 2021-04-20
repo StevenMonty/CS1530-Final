@@ -212,3 +212,38 @@
             "status": 200
         }
     ```
+
+* GET `api/search_movies/<str:query>`: Search for any movie in external DB. Returns list of relevant omvies
+    * Request: `api/search_movies/Inglorious`
+    * Response unlimited results on movie name: 
+        ```json
+            [
+                {
+                "movies": [
+                        {
+                            "title": "The Inglorious Bastards",
+                            "date": "1978-02-08",
+                            "poster_url": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/8f7PoX7TveyKrndh3bZZcBvR55Z.jpg"
+
+                        }
+                    ]
+                }
+            ]
+        ```
+
+* GET `api/search_movie/<str:query>`: Search for an individual movie in external DB. Returns movie data
+    * Request: `api/search_movie/Blade`
+    * Response unlimited results on movie name: 
+         ```json
+            {
+                "status": 200/400,
+                "movie_data":
+                    {
+                        "title": "Blade",
+                        "overview": "The Daywalker known as \"Blade\" - a half-vampire, half-mortal man - becomes the protector of humanity against an underground army of vampires.", 
+                        "release_date": "1998-08-21", 
+                        "language": "en", 
+                        "poster_url": "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/e6ErRnIgKmoBtcKpht3amsMfo52.jpg"
+                    }
+            }
+        ```
