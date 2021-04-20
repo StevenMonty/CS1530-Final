@@ -19,6 +19,7 @@ const Feed = (props) => {
         <div className={classes.base}>
             <FeedCard/>
             <FeedCard/>
+            <FeedCard/>
         </div>
     )
 }
