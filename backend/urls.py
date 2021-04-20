@@ -7,6 +7,7 @@ urlpatterns = [
 
     path('auth/login', obtain_jwt_token),
     path('auth/register', UserRegisterView.as_view()),
+    path('auth/current_user', current_user),
 
     path('users/add_friend/<str:username>', add_friend),
 
@@ -15,7 +16,7 @@ urlpatterns = [
 
     path('search/<str:query>', search),
 
-
-    path('current_user/', current_user),
-
+    path('media/feed', get_feed),
+    path('media/list', list_media),
+    path('media/add_rating', AddRatingView.as_view()),
 ]

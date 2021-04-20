@@ -56,6 +56,15 @@ class MediaSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Media
-        fields = ('title', 'author', 'year', 'media_type')
+        fields = ('id', 'title', 'author', 'year', 'media_type', 'num_ratings')
+
+
+class RatingSerializer(serializers.ModelSerializer):
+    media = MediaSerializer(many=False)
+    user = LibrosSearchSerializer(many=False)
+
+    class Meta:
+        model = Rating
+        fields = ('id', 'stars', 'media', 'user')
 
 

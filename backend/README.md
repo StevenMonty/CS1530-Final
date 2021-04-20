@@ -1,5 +1,7 @@
-## Endpoints:
+# Backend:
 
+
+### Authorization
 * GET `api/auth/login`: User Login and obtain JWT Token
     * Request body:
     ```json
@@ -39,6 +41,9 @@
         "id": 6
     }
     ```
+  
+### User Profiles + Searching
+  
 * POST `api/users/add_friend/<str:username>`: Add user to your friends via username
    * Request: `api/users/add_friend/admin`
    * Response:
@@ -113,6 +118,97 @@
             }
         ```
 
-## URLs Needed
-* /feed: Get current user's feed
-* /add_rating: Add a media to the DB if not present and a new rating from cur user
+### Media Iterations
+* GET `media/feed`: Get all ratings for the current users and their friends
+    * Response:
+    ```json
+        {
+            "status": 200,
+            "items": [
+                {
+                    "id": 1,
+                    "media": {
+                        "id": 1,
+                        "title": "Avengers Endgame",
+                        "author": "NA",
+                        "year": 2019,
+                        "media_type": "MOVIE",
+                        "num_ratings": 2
+                    },
+                    "user": {
+                        "details": {
+                            "id": 1,
+                            "first_name": "Steven",
+                            "last_name": "Montalbano",
+                            "email": "smm285@pitt.edu",
+                            "last_active": "2021-04-05T18:19:43.683Z",
+                            "friend_count": 2,
+                            "lib_size": 2
+                        }
+                    },
+                    "stars": 5
+                },
+                {
+                    "id": 2,
+                    "media": {
+                        "id": 2,
+                        "title": "The OA",
+                        "author": "Brad Pitt",
+                        "year": 2016,
+                        "media_type": "TV",
+                        "num_ratings": 2
+                    },
+                    "user": {
+                        "details": {
+                            "id": 6,
+                            "first_name": "Steven",
+                            "last_name": "Monty2",
+                            "email": "montalbano@pitt.edu",
+                            "last_active": null,
+                            "friend_count": 1,
+                            "lib_size": 2
+                        }
+                    },
+                    "stars": 2
+                }
+            ]
+        }
+    ```
+* GET `api/media/list`: List all media currently in the DB
+    * Request: `api/media/list`
+    * Response:
+    ```json
+        [
+            {
+                "id": 1,
+                "title": "Avengers Endgame",
+                "author": "NA",
+                "year": 2019,
+                "media_type": "MOVIE",
+                "num_ratings": 1
+            },
+            {
+                "id": 2,
+                "title": "The OA",
+                "author": "Brad Pitt",
+                "year": 2016,
+                "media_type": "TV",
+                "num_ratings": 0
+            }
+        ]
+    ```
+  
+* POST `api/media/add_rating`: Add a new rating to a media object by its ID
+    * Request Body:
+    ```json
+        {
+            "media_id": 2,
+            "rating": 5
+        }
+    ``` 
+    * Response:
+    ```json
+        {
+            "status": 200
+        }
+    ```

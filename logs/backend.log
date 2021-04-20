@@ -271,3 +271,441 @@ AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse`
 2021-04-20 04:18:24,863 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
 2021-04-20 04:26:59,271 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
 2021-04-20 04:26:59,931 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 04:52:36,489 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/models.py changed, reloading.
+2021-04-20 04:52:37,218 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 04:57:23,060 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 04:57:23,632 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 04:58:19,090 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 04:58:19,608 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 04:59:05,998 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 04:59:06,625 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 04:59:37,654 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 04:59:38,205 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 04:59:45,769 django.request: log_response{}:WARNING: Unauthorized: /api/media/list
+2021-04-20 04:59:45,770 django.server: log_message{}:WARNING: "GET /api/media/list HTTP/1.1" 401 58
+2021-04-20 04:59:51,979 django.server: log_message{}:INFO: "GET /api/media/list HTTP/1.1" 200 147
+2021-04-20 05:00:07,381 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:00:07,962 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:00:10,837 django.server: log_message{}:INFO: "GET /api/media/list HTTP/1.1" 200 161
+2021-04-20 05:02:32,133 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/models.py changed, reloading.
+2021-04-20 05:02:32,751 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:02:42,319 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:02:42,752 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:02:45,151 django.server: log_message{}:INFO: "GET /api/media/list HTTP/1.1" 200 193
+2021-04-20 05:04:51,892 django.request: log_response{}:WARNING: Not Found: /tcurrent_user/
+2021-04-20 05:04:51,892 django.server: log_message{}:WARNING: "GET /tcurrent_user/ HTTP/1.1" 404 2096
+2021-04-20 05:04:58,617 django.request: log_response{}:WARNING: Not Found: /current_user/
+2021-04-20 05:04:58,617 django.server: log_message{}:WARNING: "GET /current_user/ HTTP/1.1" 404 2093
+2021-04-20 05:05:13,615 django.request: log_response{}:WARNING: Not Found: /api/tcurrent_user/
+2021-04-20 05:05:13,615 django.server: log_message{}:WARNING: "GET /api/tcurrent_user/ HTTP/1.1" 404 3196
+2021-04-20 05:05:22,518 django.server: log_message{}:INFO: "GET /api/current_user/ HTTP/1.1" 200 5475
+2021-04-20 05:06:22,590 django.server: log_message{}:INFO: "GET /api/media/list HTTP/1.1" 200 5729
+2021-04-20 05:16:07,840 django.request: log_response{}:WARNING: Not Found: /token-auth/
+2021-04-20 05:16:07,841 django.server: log_message{}:WARNING: "GET /token-auth/ HTTP/1.1" 404 2087
+2021-04-20 05:16:08,587 django.server: log_message{}:INFO: "GET /admin/backend/librosprofile/1/change/ HTTP/1.1" 200 8234
+2021-04-20 05:16:08,995 django.server: log_message{}:INFO: "GET /admin/backend/librosprofile/ HTTP/1.1" 200 7204
+2021-04-20 05:16:09,195 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 05:22:53,215 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 05:22:53,876 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:23:31,473 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:23:31,934 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:23:58,763 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:23:59,274 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:24:43,715 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:24:44,118 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:26:15,837 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:26:16,530 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:26:38,371 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 05:26:38,804 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:26:44,875 backend.views: post{}:DEBUG: request{}
+2021-04-20 05:26:44,876 django.server: log_message{}:INFO: "POST /api/media/add_rating HTTP/1.1" 200 15
+2021-04-20 05:26:55,609 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:26:56,055 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:27:11,518 backend.views: post{}:DEBUG: request {'media': 1}
+2021-04-20 05:27:11,519 django.server: log_message{}:INFO: "POST /api/media/add_rating HTTP/1.1" 200 15
+2021-04-20 05:27:33,054 backend.views: post{}:DEBUG: request {'media_id': 1, 'rating': 5}
+2021-04-20 05:27:33,055 django.server: log_message{}:INFO: "POST /api/media/add_rating HTTP/1.1" 200 15
+2021-04-20 05:27:52,905 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:27:53,338 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:27:56,482 backend.views: post{}:DEBUG: user: smontalbano, request {'media_id': 1, 'rating': 5}
+2021-04-20 05:27:56,483 django.server: log_message{}:INFO: "POST /api/media/add_rating HTTP/1.1" 200 15
+2021-04-20 05:29:45,808 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:29:46,228 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:29:54,826 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:29:55,240 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:30:05,662 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:30:06,115 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:30:47,353 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:30:47,873 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:31:30,670 backend.views: post{}:DEBUG: user smontalbano, request {'media_id': 2, 'rating': 5}
+2021-04-20 05:31:30,792 django.request: log_response{}:ERROR: Internal Server Error: /api/media/add_rating
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 108, in post
+    Rating.objects.create(**kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/query.py", line 445, in create
+    obj = self.model(**kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<QuerySet [<Media: TV: The OA (2016)>]>": "Rating.media" must be a "Media" instance.
+2021-04-20 05:31:30,795 django.server: log_message{}:ERROR: "POST /api/media/add_rating HTTP/1.1" 500 107834
+2021-04-20 05:31:41,720 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:31:42,300 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:31:46,195 backend.views: post{}:DEBUG: user smontalbano, request {'media_id': 2, 'rating': 5}
+2021-04-20 05:31:46,330 django.request: log_response{}:ERROR: Internal Server Error: /api/media/add_rating
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 108, in post
+    Rating.objects.create(**kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/query.py", line 445, in create
+    obj = self.model(**kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/base.py", line 483, in __init__
+    _setattr(self, field.name, rel_obj)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/fields/related_descriptors.py", line 215, in __set__
+    raise ValueError(
+ValueError: Cannot assign "<User: smontalbano>": "Rating.user" must be a "LibrosProfile" instance.
+2021-04-20 05:31:46,335 django.server: log_message{}:ERROR: "POST /api/media/add_rating HTTP/1.1" 500 107556
+2021-04-20 05:31:55,218 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:31:55,673 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:32:01,736 backend.views: post{}:DEBUG: user smontalbano, request {'media_id': 2, 'rating': 5}
+2021-04-20 05:32:01,743 django.server: log_message{}:INFO: "POST /api/media/add_rating HTTP/1.1" 200 15
+2021-04-20 05:32:08,833 django.server: log_message{}:INFO: "GET /api/profile/smontalbano HTTP/1.1" 200 549
+2021-04-20 05:36:17,161 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:36:17,775 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:38:07,602 django.server: log_message{}:INFO: "GET /admin/backend/librosprofile/2/change/ HTTP/1.1" 200 8219
+2021-04-20 05:38:08,013 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 05:38:14,313 django.server: log_message{}:INFO: "POST /admin/backend/librosprofile/2/change/ HTTP/1.1" 302 0
+2021-04-20 05:38:14,398 django.server: log_message{}:INFO: "GET /admin/backend/librosprofile/ HTTP/1.1" 200 7419
+2021-04-20 05:38:14,579 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 05:39:46,830 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:39:47,425 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:40:10,366 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:40:10,856 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:40:17,622 django.request: log_response{}:WARNING: Method Not Allowed: /api/media/feed
+2021-04-20 05:40:17,623 django.server: log_message{}:WARNING: "POST /api/media/feed HTTP/1.1" 405 41
+2021-04-20 05:40:22,031 backend.views: get_feed{}:DEBUG: feed for user smontalbano
+2021-04-20 05:40:22,032 django.server: log_message{}:INFO: "GET /api/media/feed HTTP/1.1" 200 15
+2021-04-20 05:42:20,816 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:42:22,061 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:43:20,180 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:43:20,603 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:43:23,874 django.request: log_response{}:ERROR: Internal Server Error: /api/media/feed
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 114, in get_feed
+    feed = Rating.objects.filter(
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/query.py", line 942, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/query.py", line 962, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/query.py", line 969, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1358, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1237, in build_filter
+    return self._add_q(
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1377, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1319, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/sql/query.py", line 1165, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/lookups.py", line 24, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/db/models/fields/related_lookups.py", line 50, in get_prep_lookup
+    self.rhs = [get_normalized_value(val, self.lhs)[0] for val in self.rhs]
+TypeError: 'ManyRelatedManager' object is not iterable
+2021-04-20 05:43:23,877 django.server: log_message{}:ERROR: "GET /api/media/feed HTTP/1.1" 500 157508
+2021-04-20 05:43:36,547 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:43:36,981 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:43:39,042 backend.views: get_feed{}:DEBUG: feed for user smontalbano: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>]>
+2021-04-20 05:43:39,043 django.server: log_message{}:INFO: "GET /api/media/feed HTTP/1.1" 200 15
+2021-04-20 05:44:05,779 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>]>
+2021-04-20 05:44:05,780 django.server: log_message{}:INFO: "GET /api/media/feed HTTP/1.1" 200 15
+2021-04-20 05:44:15,427 django.server: log_message{}:INFO: "GET /api/profile/admin HTTP/1.1" 200 418
+2021-04-20 05:45:50,845 django.server: log_message{}:INFO: "GET /admin/backend/rating/ HTTP/1.1" 200 6977
+2021-04-20 05:45:51,034 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 05:45:53,250 django.server: log_message{}:INFO: "GET /admin/backend/rating/add/ HTTP/1.1" 200 9189
+2021-04-20 05:45:53,374 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 05:46:00,622 django.server: log_message{}:INFO: "POST /admin/backend/rating/add/ HTTP/1.1" 302 0
+2021-04-20 05:46:00,685 django.server: log_message{}:INFO: "GET /admin/backend/rating/add/ HTTP/1.1" 200 9454
+2021-04-20 05:46:00,821 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 05:46:07,511 django.server: log_message{}:INFO: "POST /admin/backend/rating/add/ HTTP/1.1" 302 0
+2021-04-20 05:46:07,586 django.server: log_message{}:INFO: "GET /admin/backend/rating/ HTTP/1.1" 200 7712
+2021-04-20 05:46:07,716 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 05:46:16,627 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:46:16,628 django.server: log_message{}:INFO: "GET /api/media/feed HTTP/1.1" 200 15
+2021-04-20 05:47:12,022 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:47:12,614 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:47:15,122 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:47:15,242 django.request: log_response{}:ERROR: Internal Server Error: /api/media/feed
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 457, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 97, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'Rating' object has no attribute 'title'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 120, in get_feed
+    return JsonResponse({'status': 200, 'items': MediaSerializer(feed, many=True).data})
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 502, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/fields.py", line 490, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `title` on serializer `MediaSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `Rating` instance.
+Original exception text was: 'Rating' object has no attribute 'title'.
+2021-04-20 05:47:15,249 django.server: log_message{}:ERROR: "GET /api/media/feed HTTP/1.1" 500 133254
+2021-04-20 05:47:57,453 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:47:58,070 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:48:04,589 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 05:48:04,985 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:48:09,176 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:48:09,250 django.request: log_response{}:ERROR: Internal Server Error: /api/media/feed
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 120, in get_feed
+    return JsonResponse({'status': 200, 'items': RatingSerializer(feed, many=True).data})
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1053, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1199, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1317, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `rating` is not valid for model `Rating`.
+2021-04-20 05:48:09,253 django.server: log_message{}:ERROR: "GET /api/media/feed HTTP/1.1" 500 144367
+2021-04-20 05:48:16,773 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:48:17,202 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:48:22,167 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:48:22,170 django.server: log_message{}:INFO: "GET /api/media/feed HTTP/1.1" 200 210
+2021-04-20 05:48:32,015 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:48:32,568 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:48:33,876 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:48:34,341 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:48:36,596 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:48:36,677 django.request: log_response{}:ERROR: Internal Server Error: /api/media/feed
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 120, in get_feed
+    return JsonResponse({'status': 200, 'items': RatingSerializer(feed, many=True).data})
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 500, in to_representation
+    for field in fields:
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 361, in _readable_fields
+    for field in self.fields.values():
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 349, in fields
+    for key, value in self.get_fields().items():
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1053, in get_fields
+    field_class, field_kwargs = self.build_field(
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1199, in build_field
+    return self.build_unknown_field(field_name, model_class)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 1317, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `media.title` is not valid for model `Rating`.
+2021-04-20 05:48:36,679 django.server: log_message{}:ERROR: "GET /api/media/feed HTTP/1.1" 500 144196
+2021-04-20 05:48:55,353 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:48:55,771 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:48:56,967 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:48:56,969 django.server: log_message{}:INFO: "GET /api/media/feed HTTP/1.1" 200 210
+2021-04-20 05:52:27,614 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/models.py changed, reloading.
+2021-04-20 05:52:28,233 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:52:32,476 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:52:32,667 django.request: log_response{}:ERROR: Internal Server Error: /api/media/feed
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 120, in get_feed
+    return JsonResponse({'status': 200, 'items': RatingSerializer(feed, many=True).data})
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 745, in data
+    ret = super().data
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 246, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 664, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 515, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/serializers.py", line 663, in to_representation
+    return [
+TypeError: 'Media' object is not iterable
+2021-04-20 05:52:32,696 django.server: log_message{}:ERROR: "GET /api/media/feed HTTP/1.1" 500 124407
+2021-04-20 05:52:43,096 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:52:43,659 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:52:48,396 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:52:48,408 django.server: log_message{}:INFO: "GET /api/media/feed HTTP/1.1" 200 630
+2021-04-20 05:53:18,984 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:53:19,556 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:53:22,241 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:53:22,308 django.server: log_message{}:INFO: "GET /api/media/feed HTTP/1.1" 200 2752
+2021-04-20 05:53:44,664 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 05:53:45,085 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 05:53:47,868 backend.views: get_feed{}:DEBUG: feed for user admin: <QuerySet [<Rating: smontalbano: MOVIE: Avengers Endgame (2019), 5 Stars>, <Rating: smontalbano: TV: The OA (2016), 5 Stars>, <Rating: montalbano: TV: The OA (2016), 2 Stars>, <Rating: montalbano: MOVIE: Avengers Endgame (2019), 4 Stars>]>
+2021-04-20 05:53:47,903 django.server: log_message{}:INFO: "GET /api/media/feed HTTP/1.1" 200 1294
+2021-04-20 05:57:49,654 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/models.py changed, reloading.
+2021-04-20 05:57:50,292 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:00:55,253 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
+2021-04-20 06:00:55,659 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:12:23,543 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 06:12:24,201 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
