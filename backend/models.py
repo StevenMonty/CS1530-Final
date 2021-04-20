@@ -4,6 +4,7 @@ from django.utils.translation import gettext_lazy as _
 from django.forms.models import model_to_dict
 import json
 
+
 MEDIA_TYPES = (
     ('MOVIE', _('Movie')),
     ('TV', _('TV Show')),
@@ -43,7 +44,6 @@ class LibrosProfile(models.Model):
                 'last_active': f.user.last_login,
             })
 
-        # print(f'friends: {friend_list}')
         return friend_list
 
     @property
@@ -71,6 +71,10 @@ class Media(models.Model):
     def __str__(self):
         return f'{self.media_type}: {self.title} ({self.year})'
 
+    @property
+    def num_ratings(self):
+        return Rating.objects.filter(media=self).count()
+
 
 class Rating(models.Model):
     media = models.ForeignKey(Media, on_delete=models.DO_NOTHING)
@@ -79,3 +83,8 @@ class Rating(models.Model):
 
     def __str__(self):
         return f'{self.user}: {self.media}, {self.stars} Stars'
+
+    # @property
+    # def media_details(self):
+    #     return self.media
+

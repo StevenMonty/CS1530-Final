@@ -89,7 +89,35 @@ def add_friend(request, username):
 
     # not sure what to return
     return JsonResponse({'status': 200, 'message': f'{cur_user} successfully added {username} as a friend!'})
-    
+
+
+@api_view(['GET'])
+def list_media(request):
+    return Response(MediaSerializer(Media.objects.all(), many=True).data)
+
+
+class AddRatingView(APIView):
+
+    def post(self, request):
+        logger.debug(f'user {request.user}, request {request.data}')
+        kwargs = {
+            'user': request.user.librosprofile,
+            'media': Media.objects.get(id=request.data['media_id']),    # TODO error checking
+            'stars': request.data['rating']
+        }
+        Rating.objects.create(**kwargs)
+        return JsonResponse({'status': 200})
+
+
+@api_view(['GET'])
+def get_feed(request):
+    feed = Rating.objects.filter(
+            Q(user__exact=request.user.librosprofile) |
+            Q(user__in=request.user.librosprofile.friends.all())
+    )
+
+    logger.debug(f'feed for user {request.user}: {feed}')
+    return JsonResponse({'status': 200, 'items': RatingSerializer(feed, many=True).data})
 
 class UserRegisterView(APIView):
     permission_classes = (permissions.AllowAny,)

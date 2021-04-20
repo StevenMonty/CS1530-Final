@@ -1,5 +1,7 @@
-## Endpoints:
+# Backend:
 
+
+### Authorization
 * GET `api/auth/login`: User Login and obtain JWT Token
     * Request body:
     ```json
@@ -39,6 +41,9 @@
         "id": 6
     }
     ```
+  
+### User Profiles + Searching
+  
 * POST `api/users/add_friend/<str:username>`: Add user to your friends via username
    * Request: `api/users/add_friend/admin`
    * Response:
@@ -112,6 +117,46 @@
                 ]
             }
         ```
+
+### Media Iterations
+* GET `api/media/list`: List all media currently in the DB
+    * Request: `api/media/list`
+    * Response:
+    ```json
+        [
+            {
+                "id": 1,
+                "title": "Avengers Endgame",
+                "author": "NA",
+                "year": 2019,
+                "media_type": "MOVIE",
+                "num_ratings": 1
+            },
+            {
+                "id": 2,
+                "title": "The OA",
+                "author": "Brad Pitt",
+                "year": 2016,
+                "media_type": "TV",
+                "num_ratings": 0
+            }
+        ]
+    ```
+  
+* POST `api/media/add_rating`: Add a new rating to a media object by its ID
+    * Request Body:
+    ```json
+        {
+            "media_id": 2,
+            "rating": 5
+        }
+    ``` 
+    * Response:
+    ```json
+        {
+            "status": 200
+        }
+    ```
 
 ## URLs Needed
 * /feed: Get current user's feed
