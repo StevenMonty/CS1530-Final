@@ -84,7 +84,3 @@ class Rating(models.Model):
     def __str__(self):
         return f'{self.user}: {self.media}, {self.stars} Stars'
 
-    # @property
-    # def media_details(self):
-    #     return self.media
-
