@@ -1,6 +1,7 @@
 
 from django.urls import path, re_path
 from .views import *
+from .movies import *
 from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
@@ -19,4 +20,6 @@ urlpatterns = [
     path('media/feed', get_feed),
     path('media/list', list_media),
     path('media/add_rating', AddRatingView.as_view()),
+    path('search_movies/<str:query>', search_movies),
+    path('search_movie/<str:query>', movie_info),
 ]
