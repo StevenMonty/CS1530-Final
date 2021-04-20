@@ -36,7 +36,7 @@ const FeedCard = (props) => {
             KR
           </Avatar>
         }
-        title="User's Name"
+        title="Kenan Rustmov"
         subheader="September 14, 2016"
       />
         <CardMedia
@@ -45,10 +45,10 @@ const FeedCard = (props) => {
         ><img src={require("../images/budapestHotel.jpg")} alt="recipe thumbnail"/></CardMedia>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Media Title
+            The Grand Budapest Hotel
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Description for the media/description made by user
+            Great movie! I would highly recommend watching it.
           </Typography>
         </CardContent>
         <CardActions disableSpacing>

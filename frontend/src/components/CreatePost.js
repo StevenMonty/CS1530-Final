@@ -55,7 +55,6 @@ export default function Login() {
             label="Title"
             name="title"
             autoComplete="title"
-            autoFocus
           />
           <div>
             <Box component="fieldset" mb={3} borderColor="transparent">
