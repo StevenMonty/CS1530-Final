@@ -707,3 +707,5 @@ TypeError: 'Media' object is not iterable
 2021-04-20 05:57:50,292 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
 2021-04-20 06:00:55,253 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/serializers.py changed, reloading.
 2021-04-20 06:00:55,659 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 06:12:23,543 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
+2021-04-20 06:12:24,201 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader

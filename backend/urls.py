@@ -7,7 +7,7 @@ urlpatterns = [
 
     path('auth/login', obtain_jwt_token),
     path('auth/register', UserRegisterView.as_view()),
-    path('current_user/', current_user),
+    path('auth/current_user', current_user),
 
     path('users/add_friend/<str:username>', add_friend),
 
