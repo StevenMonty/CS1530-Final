@@ -12,3 +12,8 @@
 ## After running
 View the API at localhost:8000<br>
 View the frontend at localhost:3000
+
+
+## Backend Credentials
+* username: `admin`
+* password: `root`
