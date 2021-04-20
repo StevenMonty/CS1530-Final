@@ -10,10 +10,12 @@ def create_libros_profile(sender, instance, created, **kwargs):
     """
         Creates a Libros profile model instance when a django User model is created
     """
+    # print(f'user saved signal: {instance}, {created}, {kwargs}')
+
     if created:
         LibrosProfile.objects.create(user=instance)
 
 
-@receiver(post_save, sender=User)
-def save_user_profile(sender, instance, **kwargs):
-    instance.profile.save()
+# @receiver(post_save, sender=User)
+# def save_user_profile(sender, instance, **kwargs):
+#     instance.profile.save()

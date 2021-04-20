@@ -1,9 +1,11 @@
-from django.http import HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.contrib.auth.models import User
+from django.db.utils import IntegrityError
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from rest_framework import status, permissions
+from django.db.models import Q
 import logging
 # from .models import Student
 from .serializers import *
@@ -21,15 +23,30 @@ def current_user(request):
     serializer = UserSerializer(request.user)
     return Response(serializer.data)
 
+
 @api_view(['POST'])
-def get_user(request):
+def get_user(request, id):
     """
     Return the user specified by id (the requested user pk)
     """
-    pk = request.POST.id # Not sure what request param this should be
-    profile = LibrosProfile.objects.get(pk=pk)
+    profile = LibrosProfile.objects.get(pk=id)
     serializer = LibrosProfileSerializer(profile)
     return Response(serializer.data)
+
+
+@api_view(['POST'])
+def search_user(request, query):
+    """
+    """
+    results = LibrosProfile.objects.filter(
+            Q(user__email__contains=query) |
+            Q(user__first_name__contains=query) |
+            Q(user__last_name__contains=query) |
+            Q(user__username__contains=query)
+    )
+    serializer = LibrosSearchSerializer(results, many=True)
+    return Response(serializer.data)
+
 
 @api_view(['POST'])
 def add_friend(request):
@@ -44,6 +61,22 @@ def add_friend(request):
     # not sure what to return
     return 1
     
+
+class UserRegisterView(APIView):
+    permission_classes = (permissions.AllowAny,)
+
+    def post(self, request):
+        print(f'Create User, req: {request}, POST: {request.data}')
+        try:
+            user = User.objects.create_user(**request.data)
+            user.set_password(request.data['password'])
+            user.save()
+            return JsonResponse({'status': 200, 'message': f'User {user} successfully created!', 'id': LibrosProfile.objects.get(user=user).id})
+        except IntegrityError:
+            return JsonResponse({'status': 400, 'message': f'Error, User already exists'})
+        except Exception as e:
+            return JsonResponse({'status': 500, 'message': f'Error: {str(e)}'})
+
 
 class UserList(APIView):
     """

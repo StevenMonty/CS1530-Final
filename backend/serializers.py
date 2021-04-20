@@ -37,8 +37,18 @@ class UserSerializerWithToken(serializers.ModelSerializer):
         model = User
         fields = ('token', 'username', 'password')
 
+
 class LibrosProfileSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = LibrosProfile
-        fields = ('user', 'friends')
+        fields = ('details', 'friends_list', 'library')
+
+
+class LibrosSearchSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = LibrosProfile
+        fields = ('details',)
+
+
