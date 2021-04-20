@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 import logging.config
+import logging
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -119,69 +120,69 @@ DATABASES = {
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
-    },
-    {
-        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
-    },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    # },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    # },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    # },
+    # {
+    #     'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    # },
 ]
 
-# if DEBUG:
-#     LOGLEVEL = logging.DEBUG
-# else:
-#     LOGLEVEL = os.environ.get('LOGLEVEL', 'info').upper()
+if DEBUG:
+    LOGLEVEL = logging.DEBUG
+else:
+    LOGLEVEL = os.environ.get('LOGLEVEL', 'info').upper()
 #
-# DJANGO_LOGLEVEL = os.environ.get('DJANGO_LOGLEVEL', 'info').upper()
-# LOGGING_CONFIG = None
-#
-# logging_dict = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'formatters': {
-#         'consoleFormat': {
-#             # exact format is not important, this is the minimum information
-#             'format': '%(name)s: %(funcName)s{},%(lineno)d:%(levelname)s: %(message)s',
-#         },
-#         'fileFormat': {
-#             'format': '%(asctime)s %(name)s: %(funcName)s{}:%(levelname)s: %(message)s',
-#             # NOTE: Regex for log parsing, with and without capturing groups
-#             #   ^(?P<date>[0-9\s:,\-]{23})\s(?P<modules>[a-zA-Z._{}]+):\s(?P<function>[<>a-zA-Z_{}]+):(?P<level>[A-Z]+):\s(?P<msg>.*)$
-#             #   ^([0-9\s:,\-]{23})\s([a-zA-Z._{}]+):\s([<>a-zA-Z_{}]+):([A-Z]+):\s(.*)$
-#         }
-#     },
-#     'handlers': {
-#         'consoleHandler': {                             # Console logging
-#             'class': 'logging.StreamHandler',
-#             'formatter': 'consoleFormat',
-#         },
-#         'fileHandler': {                         # Master log file
-#             'class':     'logging.FileHandler',
-#             'formatter': 'fileFormat',
-#             'filename':  f'{BASE_DIR}/logs/backend.log',
-#         }
-#     },
-#     'loggers': {
-#         # root logger
-#         'backend': {
-#             'level': LOGLEVEL,
-#             'handlers': ['consoleHandler', 'fileHandler'],
-#         },
-#         'django': {
-#             'level': DJANGO_LOGLEVEL,
-#             'handlers': ['consoleHandler', 'fileHandler'],
-#         },
-#
-#     },
-# }
-#
-# logging.config.dictConfig(logging_dict)
+DJANGO_LOGLEVEL = os.environ.get('DJANGO_LOGLEVEL', 'info').upper()
+LOGGING_CONFIG = None
+
+logging_dict = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'consoleFormat': {
+            # exact format is not important, this is the minimum information
+            'format': '%(name)s: %(funcName)s{},%(lineno)d:%(levelname)s: %(message)s',
+        },
+        'fileFormat': {
+            'format': '%(asctime)s %(name)s: %(funcName)s{}:%(levelname)s: %(message)s',
+            # NOTE: Regex for log parsing, with and without capturing groups
+            #   ^(?P<date>[0-9\s:,\-]{23})\s(?P<modules>[a-zA-Z._{}]+):\s(?P<function>[<>a-zA-Z_{}]+):(?P<level>[A-Z]+):\s(?P<msg>.*)$
+            #   ^([0-9\s:,\-]{23})\s([a-zA-Z._{}]+):\s([<>a-zA-Z_{}]+):([A-Z]+):\s(.*)$
+        }
+    },
+    'handlers': {
+        'consoleHandler': {                             # Console logging
+            'class': 'logging.StreamHandler',
+            'formatter': 'consoleFormat',
+        },
+        'fileHandler': {                         # Master log file
+            'class':     'logging.FileHandler',
+            'formatter': 'fileFormat',
+            'filename':  f'{BASE_DIR}/logs/backend.log',
+        }
+    },
+    'loggers': {
+        # root logger
+        'backend': {
+            'level': LOGLEVEL,
+            'handlers': ['consoleHandler', 'fileHandler'],
+        },
+        'django': {
+            'level': DJANGO_LOGLEVEL,
+            'handlers': ['consoleHandler', 'fileHandler'],
+        },
+
+    },
+}
+
+logging.config.dictConfig(logging_dict)
 
 
 # Internationalization
