@@ -212,8 +212,3 @@
             "status": 200
         }
     ```
-
-
-## URLs Needed
-* /feed: Get current user's feed
-* /add_rating: Add a media to the DB if not present and a new rating from cur user
