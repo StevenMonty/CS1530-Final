@@ -8,6 +8,7 @@ import {CUR_USER, GET_TOKEN} from "./constants";
 import CreatePost from "./components/CreatePost"
 import SearchMovie from "./components/SearchMovie"
 import Main from "./components/Main"
+import Login from "./components/Login";
 
 class App extends Component {
     state = {
@@ -22,7 +23,7 @@ class App extends Component {
     componentWillMount() {
         this.initState();
     }
-    parseCurUser(data, login){
+    parseCurUser = (data, login) => {
         console.log('Parse Cur User Data: ' + login);
         console.log(data);
         if (login){
@@ -74,13 +75,15 @@ class App extends Component {
 
         }
 
+
+
     };
 
     render() {
     return (
       <Fragment>
         <NavBar user={this.state}/>
-        <Main/>
+        <Login loginCallback = { this.parseCurUser }/>
       </Fragment>
     );
   }

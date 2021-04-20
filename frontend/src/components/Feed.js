@@ -13,6 +13,7 @@ const useStyles = makeStyles({
 
 const Feed = (props) => {
     const classes = useStyles();
+    console.log(`logged in ${props.loggedIn}`)
 
     return (
         <div className={classes.base}>
