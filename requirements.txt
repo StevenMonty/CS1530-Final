@@ -2,3 +2,4 @@ django
 django-cors-headers
 djangorestframework
 djangorestframework-jwt
+tmdbv3api==1.7.5
