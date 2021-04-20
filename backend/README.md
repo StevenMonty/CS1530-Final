@@ -1,7 +1,27 @@
 ## Endpoints:
 
-* POST `api/users/register`: Create a new user
-    * Request:
+* GET `api/auth/login`: User Login and obtain JWT Token
+    * Request body:
+    ```json
+        {
+            "username": "smontalbano",
+            "password": "<PASSWORD>"
+        }   
+    ```
+    * Response:
+    ```json
+        {
+            "JWT": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6InNtb250YWxiYW5vIiwiZXhwIjoxNjE4ODkyMDM3LCJlbWFpbCI6InNtbTI4NUBwaXR0LmVkdSJ9.470tAMQlbIEOaHTvpXmEvSm3GWqR00TNppSzVMqVvDA",
+            "user": {
+                "pk": 1,
+                "username": "smontalbano",
+                "first_name": "Steven",
+                "last_name": "Montalbano"
+            }
+        }
+    ```
+* POST `api/auth/register`: Create a new user
+    * Request body:
     ```json
     {
         "username": "montalbano",
