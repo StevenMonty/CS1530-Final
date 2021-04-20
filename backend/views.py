@@ -24,7 +24,7 @@ def current_user(request):
     return Response(serializer.data)
 
 
-@api_view(['POST'])
+@api_view(['GET'])
 def get_user(request, id):
     """
     Return the user specified by id (the requested user pk)
@@ -34,7 +34,7 @@ def get_user(request, id):
     return Response(serializer.data)
 
 
-@api_view(['POST'])
+@api_view(['GET'])
 def search_user(request, query):
     """
     """
