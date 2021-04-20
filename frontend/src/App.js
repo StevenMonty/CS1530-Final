@@ -55,7 +55,7 @@ class App extends Component {
          */
         let loggedIn = localStorage.getItem('JWT') != null;
         if (!loggedIn){
-            let req = {
+            let req = {git a
                     username: "admin",
                     password: "root"
                 }
@@ -83,7 +83,8 @@ class App extends Component {
     return (
       <Fragment>
         <NavBar user={this.state}/>
-        <Login loginCallback = { this.parseCurUser }/>
+        {/*<Login loginCallback = { this.parseCurUser }/>*/}
+        <Main />
       </Fragment>
     );
   }
