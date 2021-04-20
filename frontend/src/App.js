@@ -72,13 +72,13 @@ class App extends Component {
 
         }
 
-    };
+    };ss
 
     render() {
     return (
       <Fragment>
         <NavBar user={this.state}/>
-        <Login/>
+        <Feed/>
       </Fragment>
     );
   }
