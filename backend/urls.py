@@ -1,9 +1,13 @@
 
 from django.urls import path, re_path
 from .views import *
+from rest_framework_jwt.views import obtain_jwt_token
 
 urlpatterns = [
-    path('users/register', UserRegisterView.as_view()),
+
+    path('auth/login', obtain_jwt_token),
+    path('auth/register', UserRegisterView.as_view()),
+
     path('users/add_friend/<str:username>', add_friend),
 
     path('profile/<str:username>', get_user),
@@ -12,11 +16,6 @@ urlpatterns = [
     path('search/<str:query>', search),
 
 
-
-
     path('current_user/', current_user),
-    # path('users/', UserList.as_view()),
 
-    #     re_path(r'students/$', students_list),
-#     re_path(r'students/(?P<pk>[0-9]+)$', students_detail),
 ]
