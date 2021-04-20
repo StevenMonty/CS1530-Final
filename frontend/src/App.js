@@ -5,7 +5,8 @@ import NavBar from "./components/NavBar.js";
 import Feed from "./components/Feed.js"
 import axios from "axios";
 import {CUR_USER, GET_TOKEN} from "./constants";
-import Login from "./components/Login"
+import CreatePost from "./components/CreatePost"
+import SearchMovie from "./components/SearchMovie"
 
 class App extends Component {
     state = {
@@ -72,13 +73,13 @@ class App extends Component {
 
         }
 
-    };ss
+    };
 
     render() {
     return (
       <Fragment>
         <NavBar user={this.state}/>
-        <Feed/>
+        <SearchMovie/>
       </Fragment>
     );
   }
