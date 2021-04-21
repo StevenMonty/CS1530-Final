@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Switch, Route, Redirect } from 'react-router-dom';
+import { history } from "react-router-dom";
 import axios from "axios";
 import {CUR_USER, GET_TOKEN} from "../constants";
 
@@ -8,17 +9,19 @@ import Registration from './Registration';
 import Login from './Login';
 import SearchMovie from './SearchMovie';
 import CreatePost from './CreatePost';
+import { withRouter } from 'react-router';
 
 class ProtectedRoute extends Component {
     render() {
       const { component: Component, ...props } = this.props
+      console.log(props.path);
   
       return (
         <Route 
-          {...props} 
+          {...props.path} 
           render={props => (
-            props.loggedIn ?
-              <Component {...props} /> :
+            this.props.state.loggedIn ?
+              <Component {...props.component} /> :
               <Redirect exact to='/login'/>
           )} 
         />
@@ -53,6 +56,7 @@ class Main extends Component {
             });
             localStorage.setItem('JWT', data.JWT);  // TODO remove this from localStorage on logout
             axios.defaults.headers.common = { Authorization: `JWT ${data.JWT}`}
+            this.props.history.push('/home');
         } else {
             this.setState({
                 loggedIn: true,
@@ -96,13 +100,13 @@ class Main extends Component {
         return (
             <Switch> {/* The Switch decides which component to show based on the current URL.*/}
                 {/* <Route exact path='/' render ={() => (this.state.loggedIn ? ({Feed}) : (<Redirect to="/login"/>))}></Route> */}
-                <ProtectedRoute path ='/welcome' component={Feed} props={this.state}/>
+                <ProtectedRoute path ='/home' component={Feed} state={this.state}/>
                 <Route exact path='/signup' component={Registration}></Route>
                 <Route exact path='/login' render={({parseCurUser}) => (<Login loginCallback = {this.parseCurUser} />)}/>
-                <Route exact path='/search' component={SearchMovie}></Route>
+                <ProtectedRoute path='/search' component={SearchMovie} state={this.state}/>
             </Switch>
         );
     }
 }
 
-export default Main;
+export default withRouter(Main);

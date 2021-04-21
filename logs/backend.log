@@ -915,3 +915,16 @@ KeyError: 'users'
 2021-04-20 21:44:19,348 django.server: log_message{}:INFO: "GET /api/auth/current_user HTTP/1.1" 200 69
 2021-04-20 21:44:19,385 django.server: log_message{}:INFO: "GET /api/auth/current_user HTTP/1.1" 200 69
 >>>>>>> 90476881180df091ef279b28890e0efe28b0dced
+2021-04-21 12:16:51,371 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-21 12:17:05,606 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 12:17:05,632 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 12:17:05,665 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 12:17:05,667 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 12:17:05,681 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 12:17:05,682 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 12:17:32,286 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 12:17:32,289 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 12:17:32,297 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 12:17:32,300 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 12:17:39,759 django.server: log_message{}:INFO: "OPTIONS /api/auth/login HTTP/1.1" 200 0
+2021-04-21 12:17:40,667 django.server: log_message{}:INFO: "POST /api/auth/login HTTP/1.1" 200 267

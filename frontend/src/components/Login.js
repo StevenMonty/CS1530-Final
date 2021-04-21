@@ -55,7 +55,7 @@ export default function Login(props) {
   const classes = useStyles();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const history = useHistory();
+
 
   const login = (event) => {
     event.preventDefault();
@@ -69,7 +69,7 @@ export default function Login(props) {
       // super.props.authenticated = true;
       props.loginCallback(res.data, true);
     })
-    history.push("/");
+    
   }
 
   return (
