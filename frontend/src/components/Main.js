@@ -104,6 +104,7 @@ class Main extends Component {
                 <Route exact path='/signup' component={Registration}></Route>
                 <Route exact path='/login' render={({parseCurUser}) => (<Login loginCallback = {this.parseCurUser} />)}/>
                 <ProtectedRoute path='/search' component={SearchMovie} state={this.state}/>
+                <ProtectedRoute path='/post' component={CreatePost} state={this.state}/>
             </Switch>
         );
     }

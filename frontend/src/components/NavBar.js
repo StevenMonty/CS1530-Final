@@ -15,7 +15,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import AddIcon from '@material-ui/icons/Add';
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -85,6 +85,7 @@ const NavBar = (props) => {
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+  let history = useHistory();
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
@@ -106,6 +107,12 @@ const NavBar = (props) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
 
+  const logout = (event) => {
+    handleMenuClose();
+    localStorage.removeItem('JWT');
+    history.push("/login");
+  }
+
   const menuId = 'primary-search-account-menu';
   const renderMenu = (
     <Menu
@@ -118,7 +125,7 @@ const NavBar = (props) => {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <Link to="/login" style={{ textDecoration: 'none' }}><MenuItem onClick={handleMenuClose}>Logout</MenuItem></Link>
+      <Link to="/login" style={{ textDecoration: 'none' }}><MenuItem onClick={logout}>Logout</MenuItem></Link>
       
     </Menu>
   );
@@ -160,7 +167,7 @@ const NavBar = (props) => {
     <div className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
-          <Link to="/" style={{ textDecoration: 'none' }}>
+          <Link to="/home" style={{ textDecoration: 'none' }}>
           <Typography className={classes.title} variant="h6" noWrap>
             Libros
           </Typography>
