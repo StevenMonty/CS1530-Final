@@ -2,7 +2,7 @@ from django.http import HttpResponse, HttpResponseRedirect, JsonResponse
 from django.contrib.auth.models import User
 from django.db.utils import IntegrityError
 from rest_framework.response import Response
-from rest_framework.decorators import api_view
+from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.views import APIView
 from rest_framework import status, permissions
 from django.db.models import Q
@@ -36,6 +36,8 @@ def get_user(request, username):
 
 
 @api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
 def search(request, query):
     users = LibrosProfile.objects.filter(
             Q(user__email__contains=query) |
@@ -58,6 +60,8 @@ def search(request, query):
 
 
 @api_view(['GET'])
+@authentication_classes([])
+@permission_classes([])
 def search_user(request, query):
     """
     """
@@ -106,7 +110,7 @@ class AddRatingView(APIView):
             'stars': request.data['rating']
         }
         Rating.objects.create(**kwargs)
-        return JsonResponse({'status': 200})
+        return JsonResponse({'status': 200, 'message': f'{kwargs["user"]} successfully rated {kwargs["media"]} with {kwargs["stars"]}'})
 
 
 @api_view(['GET'])
@@ -118,6 +122,7 @@ def get_feed(request):
 
     logger.debug(f'feed for user {request.user}: {feed}')
     return JsonResponse({'status': 200, 'items': RatingSerializer(feed, many=True).data})
+
 
 class UserRegisterView(APIView):
     permission_classes = (permissions.AllowAny,)

@@ -709,3 +709,197 @@ TypeError: 'Media' object is not iterable
 2021-04-20 06:00:55,659 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
 2021-04-20 06:12:23,543 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
 2021-04-20 06:12:24,201 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 17:22:41,363 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 17:22:46,285 backend.views: post{}:DEBUG: user smontalbano, request {'media_id': 2, 'rating': 5}
+2021-04-20 17:22:46,291 django.server: log_message{}:INFO: "POST /api/media/add_rating HTTP/1.1" 200 15
+2021-04-20 17:24:23,146 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 17:24:23,584 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 17:24:27,026 backend.views: post{}:DEBUG: user smontalbano, request {'media_id': 2, 'rating': 5}
+2021-04-20 17:24:27,188 django.request: log_response{}:ERROR: Internal Server Error: /api/media/add_rating
+Traceback (most recent call last):
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/venv/lib/python3.8/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py", line 109, in post
+    return JsonResponse({'status': 200, 'message': f'{kwargs["users"]} successfully rated {kwargs["media"]} with {kwargs["stars"]}'})
+KeyError: 'users'
+2021-04-20 17:24:27,190 django.server: log_message{}:ERROR: "POST /api/media/add_rating HTTP/1.1" 500 88151
+2021-04-20 17:24:36,443 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-20 17:24:36,992 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 17:24:40,409 backend.views: post{}:DEBUG: user smontalbano, request {'media_id': 2, 'rating': 5}
+2021-04-20 17:24:40,415 django.server: log_message{}:INFO: "POST /api/media/add_rating HTTP/1.1" 200 85
+2021-04-20 17:42:36,120 django.server: log_message{}:INFO: "GET /admin/backend/ HTTP/1.1" 200 3616
+2021-04-20 17:42:40,117 django.server: log_message{}:INFO: "GET /admin/ HTTP/1.1" 200 7609
+2021-04-20 17:42:41,997 django.server: log_message{}:INFO: "GET /admin/backend/ HTTP/1.1" 200 3616
+2021-04-20 17:42:43,539 django.server: log_message{}:INFO: "GET /admin/backend/librosprofile/ HTTP/1.1" 200 7204
+2021-04-20 17:42:43,676 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-20 17:42:45,581 django.server: log_message{}:INFO: "GET /admin/backend/ HTTP/1.1" 200 3616
+2021-04-20 17:42:46,885 django.server: log_message{}:INFO: "GET /admin/ HTTP/1.1" 200 7609
+2021-04-20 17:42:49,215 django.server: log_message{}:INFO: "GET /admin/auth/user/ HTTP/1.1" 200 9817
+2021-04-20 17:42:49,361 django.server: log_message{}:INFO: "GET /admin/jsi18n/ HTTP/1.1" 200 3187
+2021-04-21 02:10:56,557 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-21 02:13:15,906 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:13:15,958 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:13:15,959 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:13:41,359 django.server: log_message{}:INFO: "OPTIONS /api/auth/login HTTP/1.1" 200 0
+2021-04-21 02:13:41,540 django.server: log_message{}:INFO: "POST /api/auth/login HTTP/1.1" 200 267
+2021-04-21 02:17:54,738 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:17:54,744 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:17:54,744 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:19:53,725 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-21 02:19:54,654 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-21 02:27:15,378 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:27:15,399 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:27:15,400 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:27:39,177 django.server: log_message{}:INFO: "OPTIONS /api/search/admin HTTP/1.1" 200 0
+2021-04-21 02:27:39,181 django.request: log_response{}:WARNING: Unauthorized: /api/search/admin
+2021-04-21 02:27:39,181 django.server: log_message{}:WARNING: "POST /api/search/admin HTTP/1.1" 401 35
+2021-04-21 02:28:24,118 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/views.py changed, reloading.
+2021-04-21 02:28:24,718 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-21 02:28:29,260 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:28:29,268 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:28:29,268 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:28:35,115 django.server: log_message{}:INFO: "OPTIONS /api/search/admin HTTP/1.1" 200 0
+2021-04-21 02:28:35,119 django.request: log_response{}:WARNING: Method Not Allowed: /api/search/admin
+2021-04-21 02:28:35,119 django.server: log_message{}:WARNING: "POST /api/search/admin HTTP/1.1" 405 41
+2021-04-21 02:28:57,078 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:28:57,092 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:28:57,093 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:29:11,078 django.server: log_message{}:INFO: "OPTIONS /api/search/admin HTTP/1.1" 200 0
+2021-04-21 02:29:11,090 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})])], media: []
+2021-04-21 02:29:11,094 django.server: log_message{}:INFO: "GET /api/search/admin HTTP/1.1" 200 213
+2021-04-21 02:29:51,310 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:29:51,320 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:29:51,320 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:30:01,510 django.server: log_message{}:INFO: "OPTIONS /api/search/admin HTTP/1.1" 200 0
+2021-04-21 02:30:01,518 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})])], media: []
+2021-04-21 02:30:01,520 django.server: log_message{}:INFO: "GET /api/search/admin HTTP/1.1" 200 213
+2021-04-21 02:32:43,556 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:32:43,559 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:32:43,559 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:32:52,511 django.server: log_message{}:INFO: "OPTIONS /api/search/admin HTTP/1.1" 200 0
+2021-04-21 02:32:52,519 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})])], media: []
+2021-04-21 02:32:52,521 django.server: log_message{}:INFO: "GET /api/search/admin HTTP/1.1" 200 213
+2021-04-21 02:36:50,791 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:36:50,795 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:36:50,796 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:36:57,079 django.server: log_message{}:INFO: "OPTIONS /api/search/admin HTTP/1.1" 200 0
+2021-04-21 02:36:57,090 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})])], media: []
+2021-04-21 02:36:57,102 django.server: log_message{}:INFO: "GET /api/search/admin HTTP/1.1" 200 213
+2021-04-21 02:38:38,927 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/models.py changed, reloading.
+2021-04-21 02:38:39,534 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-21 02:38:40,641 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:38:40,648 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:38:40,649 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:39:32,944 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:39:32,961 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:39:32,961 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:39:36,363 django.server: log_message{}:INFO: "OPTIONS /api/search/admin HTTP/1.1" 200 0
+2021-04-21 02:39:36,373 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})])], media: []
+2021-04-21 02:39:36,375 django.server: log_message{}:INFO: "GET /api/search/admin HTTP/1.1" 200 234
+2021-04-21 02:40:35,999 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:40:36,003 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:40:36,003 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:40:39,140 django.server: log_message{}:INFO: "OPTIONS /api/search/admin HTTP/1.1" 200 0
+2021-04-21 02:40:39,151 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})])], media: []
+2021-04-21 02:40:39,154 django.server: log_message{}:INFO: "GET /api/search/admin HTTP/1.1" 200 234
+2021-04-21 02:41:17,208 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:41:17,222 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:41:17,223 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:41:20,771 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 02:41:20,789 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 02:41:20,801 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 02:45:30,876 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:45:30,906 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:45:30,907 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:45:33,675 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 02:45:33,699 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 02:45:33,709 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 02:46:13,490 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:46:13,495 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:46:13,496 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:46:15,961 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 02:46:15,982 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 02:46:15,992 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 02:47:29,789 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:47:29,793 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:47:29,793 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:47:32,103 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 02:47:32,122 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 02:47:32,133 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 02:51:37,302 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:51:37,305 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:51:37,306 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 02:54:32,851 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 02:54:32,855 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 02:54:32,856 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 03:00:11,152 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 03:00:11,163 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 03:00:11,164 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 03:00:17,777 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 03:00:17,810 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 03:00:17,820 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 03:00:19,615 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 03:00:19,647 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 03:00:19,667 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 03:02:50,980 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 03:02:50,984 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 03:02:50,984 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 03:02:56,397 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 03:02:56,418 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 03:02:56,427 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 03:03:04,938 django.server: log_message{}:INFO: "OPTIONS /api/users/add_friend/[object%20Object] HTTP/1.1" 200 0
+2021-04-21 03:03:04,943 django.request: log_response{}:WARNING: Unauthorized: /api/users/add_friend/[object Object]
+2021-04-21 03:03:04,944 django.server: log_message{}:WARNING: "POST /api/users/add_friend/[object%20Object] HTTP/1.1" 401 35
+2021-04-21 03:08:28,516 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 03:08:28,520 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 03:08:28,520 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 03:08:30,906 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 03:08:30,937 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 03:08:30,950 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 03:08:40,577 django.server: log_message{}:INFO: "OPTIONS /api/users/add_friend/[object%20Object] HTTP/1.1" 200 0
+2021-04-21 03:08:40,580 django.request: log_response{}:WARNING: Unauthorized: /api/users/add_friend/[object Object]
+2021-04-21 03:08:40,580 django.server: log_message{}:WARNING: "POST /api/users/add_friend/[object%20Object] HTTP/1.1" 401 35
+2021-04-21 03:08:41,210 django.server: log_message{}:INFO: "OPTIONS /api/users/add_friend/[object%20Object] HTTP/1.1" 200 0
+2021-04-21 03:08:41,223 django.request: log_response{}:WARNING: Unauthorized: /api/users/add_friend/[object Object]
+2021-04-21 03:08:41,223 django.server: log_message{}:WARNING: "POST /api/users/add_friend/[object%20Object] HTTP/1.1" 401 35
+2021-04-21 03:08:46,865 django.server: log_message{}:INFO: "OPTIONS /api/users/add_friend/[object%20Object] HTTP/1.1" 200 0
+2021-04-21 03:08:46,869 django.request: log_response{}:WARNING: Unauthorized: /api/users/add_friend/[object Object]
+2021-04-21 03:08:46,869 django.server: log_message{}:WARNING: "POST /api/users/add_friend/[object%20Object] HTTP/1.1" 401 35
+2021-04-21 03:09:08,738 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 03:09:08,743 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 03:09:08,743 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 03:09:13,980 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 03:09:13,998 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 03:09:14,008 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 03:11:33,778 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 03:11:33,799 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 03:11:33,799 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 03:11:39,996 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 03:11:40,018 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 03:11:40,032 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 03:12:23,949 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 03:12:23,954 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 03:12:23,955 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 03:12:29,625 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 03:12:29,643 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 03:12:29,653 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+2021-04-21 03:12:46,510 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-21 03:12:46,525 django.request: log_response{}:WARNING: Unauthorized: /api/auth/current_user
+2021-04-21 03:12:46,526 django.server: log_message{}:WARNING: "GET /api/auth/current_user HTTP/1.1" 401 35
+2021-04-21 03:12:49,651 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
+2021-04-21 03:12:49,674 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
+2021-04-21 03:12:49,685 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728

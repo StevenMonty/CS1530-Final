@@ -25,6 +25,7 @@ class LibrosProfile(models.Model):
             'id'         : self.id,
             'first_name' : self.user.first_name,
             'last_name'  : self.user.last_name,
+            'username'   : self.user.username,
             'email'      : self.user.email,
             'last_active': self.user.last_login,
             'friend_count': self.friends.count(),

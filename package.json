@@ -1,8 +1,6 @@
 {
   "dependencies": {
-    "@material-ui/lab": "^4.0.0-alpha.57",
-    "frontend": "file:frontend",
-    "react-router-dom": "^5.2.0"
+    "frontend": "file:frontend"
   },
   "scripts": {
     "react": "npm --prefix ./frontend start",
