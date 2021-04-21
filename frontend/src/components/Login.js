@@ -14,6 +14,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import {GET_TOKEN} from '../constants/index.js'
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 
 function Copyright() {
   return (
@@ -54,6 +55,7 @@ export default function Login(props) {
   const classes = useStyles();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const history = useHistory();
 
   const login = (event) => {
     event.preventDefault();
@@ -67,6 +69,7 @@ export default function Login(props) {
       // super.props.authenticated = true;
       props.loginCallback(res.data, true);
     })
+    history.push("/");
   }
 
   return (
@@ -104,18 +107,20 @@ export default function Login(props) {
             id="password"
             autoComplete="current-password"
           />
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
             Sign In
           </Button>
+          </Link>
           <Grid container>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="/signup" variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>

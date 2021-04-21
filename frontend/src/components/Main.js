@@ -7,6 +7,7 @@ import Feed from './Feed';
 import Registration from './Registration';
 import Login from './Login';
 import SearchMovie from './SearchMovie';
+import CreatePost from './CreatePost';
 
 class ProtectedRoute extends Component {
     render() {

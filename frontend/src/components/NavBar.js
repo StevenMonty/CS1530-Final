@@ -118,7 +118,8 @@ const NavBar = (props) => {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
+      <Link to="/login" style={{ textDecoration: 'none' }}><MenuItem onClick={handleMenuClose}>Logout</MenuItem></Link>
+      
     </Menu>
   );
 
@@ -173,16 +174,13 @@ const NavBar = (props) => {
                 </Badge>
               </IconButton>
             </Link>
-            <IconButton aria-label="add a post" color="inherit">
-              <Badge color="secondary">
-                <AddIcon />
-              </Badge>
-            </IconButton>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Badge badgeContent={17} color="secondary">
-                <NotificationsIcon />
-              </Badge>
-            </IconButton>
+            <Link to="/post" style={{ textDecoration: 'none' }}>
+              <IconButton aria-label="add a post" color="inherit">
+                <Badge color="secondary">
+                  <AddIcon />
+                </Badge>
+              </IconButton>
+            </Link>
             <IconButton
               edge="end"
               aria-label="account of current user"
