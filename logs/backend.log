@@ -709,6 +709,7 @@ TypeError: 'Media' object is not iterable
 2021-04-20 06:00:55,659 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
 2021-04-20 06:12:23,543 django.utils.autoreload: trigger_reload{}:INFO: /Users/StevenMontalbano/Programs/WebDev/CS1530/Libros/backend/urls.py changed, reloading.
 2021-04-20 06:12:24,201 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+<<<<<<< HEAD
 2021-04-20 17:22:41,363 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
 2021-04-20 17:22:46,285 backend.views: post{}:DEBUG: user smontalbano, request {'media_id': 2, 'rating': 5}
 2021-04-20 17:22:46,291 django.server: log_message{}:INFO: "POST /api/media/add_rating HTTP/1.1" 200 15
@@ -903,3 +904,14 @@ KeyError: 'users'
 2021-04-21 03:12:49,651 django.server: log_message{}:INFO: "OPTIONS /api/search/pitt HTTP/1.1" 200 0
 2021-04-21 03:12:49,674 backend.views: search{}:DEBUG: users: [OrderedDict([('details', {'id': 1, 'first_name': 'Steven', 'last_name': 'Montalbano', 'username': 'smontalbano', 'email': 'smm285@pitt.edu', 'last_active': datetime.datetime(2021, 4, 5, 18, 19, 43, 683819, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 5})]), OrderedDict([('details', {'id': 2, 'first_name': 'Libros', 'last_name': 'Admin', 'username': 'admin', 'email': 'admin@pitt.edu', 'last_active': datetime.datetime(2021, 4, 8, 19, 59, 45, 768679, tzinfo=<UTC>), 'friend_count': 2, 'lib_size': 0})]), OrderedDict([('details', {'id': 6, 'first_name': 'Steven', 'last_name': 'Monty2', 'username': 'montalbano', 'email': 'montalbano@pitt.edu', 'last_active': None, 'friend_count': 1, 'lib_size': 2})])], media: [OrderedDict([('id', 2), ('title', 'The OA'), ('author', 'Brad Pitt'), ('year', 2016), ('media_type', 'TV'), ('num_ratings', 5)])]
 2021-04-21 03:12:49,685 django.server: log_message{}:INFO: "GET /api/search/pitt HTTP/1.1" 200 728
+=======
+2021-04-20 21:42:36,984 django.utils.autoreload: run_with_reloader{}:INFO: Watching for file changes with StatReloader
+2021-04-20 21:43:07,751 django.server: log_message{}:INFO: "OPTIONS /api/auth/login HTTP/1.1" 200 0
+2021-04-20 21:43:07,751 django.server: log_message{}:INFO: "OPTIONS /api/auth/login HTTP/1.1" 200 0
+2021-04-20 21:43:08,775 django.server: log_message{}:INFO: "POST /api/auth/login HTTP/1.1" 200 267
+2021-04-20 21:43:08,785 django.server: log_message{}:INFO: "POST /api/auth/login HTTP/1.1" 200 267
+2021-04-20 21:43:17,691 django.server: log_message{}:INFO: "POST /api/auth/login HTTP/1.1" 200 267
+2021-04-20 21:44:19,340 django.server: log_message{}:INFO: "OPTIONS /api/auth/current_user HTTP/1.1" 200 0
+2021-04-20 21:44:19,348 django.server: log_message{}:INFO: "GET /api/auth/current_user HTTP/1.1" 200 69
+2021-04-20 21:44:19,385 django.server: log_message{}:INFO: "GET /api/auth/current_user HTTP/1.1" 200 69
+>>>>>>> 90476881180df091ef279b28890e0efe28b0dced
