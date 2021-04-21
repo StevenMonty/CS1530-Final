@@ -11,9 +11,10 @@ import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import axios from 'axios';
 import { DataGrid } from '@material-ui/data-grid';
+import { ADD_FRIEND, SEARCH, PLACEHOLDER } from "../constants";
 
 const columns = [
-  { field: 'movieTitle', headerName: 'Movie Title', width: 700 },
+  { field: 'title', headerName: 'Movie Title', width: 700 },
   { field: 'rating', headerName: 'Rating', width: 300 },
 ];
 
@@ -29,10 +30,14 @@ const rows = [
   {id:9, movieTitle: "King of Staten Island", rating: 5 ,},
 ];
 
+const addFriend = (username) => {
+    console.log('add friend called, event:')
+    console.log(username)
+    axios.post(ADD_FRIEND.replace(PLACEHOLDER, username))
+}
+
 const userColumns = [
   { field: 'id', headerName: 'ID', width: 120 },
-  { field: 'firstName', headerName: 'First name', width: 180 },
-  { field: 'lastName', headerName: 'Last name', width: 180 },
   { field: 'username', headerName: 'User Name', width: 180 },
   {
     field: 'fullName',
@@ -41,8 +46,27 @@ const userColumns = [
     sortable: false,
     width: 160,
     valueGetter: (params) =>
-      `${params.getValue('firstName') || ''} ${params.getValue('lastName') || ''}`,
+      `${params.getValue('first_name') || ''} ${params.getValue('last_name') || ''}`,
   },
+  // { field: 'first_name', headerName: 'First name', width: 180 },
+  // { field: 'last_name', headerName: 'Last name', width: 180 },
+  { field: 'email', headerName: 'Email', width: 180 },
+  { field: 'lib_size', headerName: 'Library Size', width: 150 },
+  { field: 'friend_count', headerName: 'Friends', width: 150 },
+    {
+        field: '',
+        headerName: 'Add Friend',
+        valueGetter: (params) => {
+          params.getValue('username')
+        },
+        renderCell: () => (
+          <button onClick={event => addFriend(event)}>
+            Send Request
+          </button>
+        ),
+         width: 180
+    },
+
 ];
 
 const userRows = [
@@ -77,8 +101,8 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const SearchMovie = () => {  
-    const classes = useStyles();
+const SearchMovie = () => {
+  const classes = useStyles();
   const [myOptions, setMyOptions] = useState([])
   const [movieName, setMovieName] = useState("");
   const [results, setResults] = useState(<div></div>);
@@ -86,26 +110,57 @@ const SearchMovie = () => {
   const getDataFromAPI = (event) => {
     console.log(movieName)
     event.preventDefault();
-    axios.get(`https://api.themoviedb.org/3/search/movie?api_key=86c55e3a1810413caf10a4f40dc26944&language=en-US&query=${movieName}&page=1&include_adult=false`)
-      .then(res => {
-        console.log(res.data)
-        // for (var i = 0; i < res.data.length; i++) {
-        //     myOptions.push(res.data[i].employee_name)
-        // }
-        // setMyOptions(myOptions)
+    // axios.get(`https://api.themoviedb.org/3/search/movie?api_key=86c55e3a1810413caf10a4f40dc26944&language=en-US&query=${movieName}&page=1&include_adult=false`)
+
+    axios.all([
+        axios.get(`https://api.themoviedb.org/3/search/movie?api_key=86c55e3a1810413caf10a4f40dc26944&language=en-US&query=${movieName}&page=1&include_adult=false`),
+        axios.get(SEARCH.replace(PLACEHOLDER, movieName))
+    ]).then(axios.spread((movieRes, backendRes) => {
+        // console.log(`backend res:`)
+        // console.log(backendRes.data)
+        console.log(`movie api res:`)
+        console.log(movieRes.data)
+
+        let userRows = []
+        backendRes.data.users.forEach(u => {userRows.push(u.details)})
+
+        let movieRows = []
+        movieRes.data.results.forEach(m => { movieRows.push( { 'id': m.id, 'title': m.title, 'rating': m.vote_average }) })
+
         setResults(
           <div>
             <div style={{ height: 40, width: '80%', margin:"auto"}}>Users</div>
             <div style={{ height: 400, width: '80%', margin:"auto"}}>
-              <DataGrid rows={userRows} columns={userColumns} pageSize={5} />
+              <DataGrid rows={userRows} columns={userColumns} pageSize={5}/>
             </div>
             <div style={{ height: 40, width: '80%', margin:"auto"}}>Movies</div>
             <div style={{ height: 400, width: '80%', margin:"auto"}}>
-            <DataGrid rows={rows} columns={columns} pageSize={5} />
+            <DataGrid rows={movieRows} columns={columns} pageSize={5} />
           </div>
         </div>
         )
-      })
+    }));
+
+    // axios.get(`https://api.themoviedb.org/3/search/movie?api_key=86c55e3a1810413caf10a4f40dc26944&language=en-US&query=${movieName}&page=1&include_adult=false`)
+    //   .then(res => {
+    //     console.log(res.data)
+    //     // for (var i = 0; i < res.data.length; i++) {
+    //     //     myOptions.push(res.data[i].employee_name)
+    //     // }
+    //     // setMyOptions(myOptions)
+    //     setResults(
+    //       <div>
+    //         <div style={{ height: 40, width: '80%', margin:"auto"}}>Users</div>
+    //         <div style={{ height: 400, width: '80%', margin:"auto"}}>
+    //           <DataGrid rows={userRows} columns={userColumns} pageSize={5} />
+    //         </div>
+    //         <div style={{ height: 40, width: '80%', margin:"auto"}}>Movies</div>
+    //         <div style={{ height: 400, width: '80%', margin:"auto"}}>
+    //         <DataGrid rows={rows} columns={columns} pageSize={5} />
+    //       </div>
+    //     </div>
+    //     )
+    //   })
   }
   
   return (
