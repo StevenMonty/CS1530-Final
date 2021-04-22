@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react'
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
-import Link from '@material-ui/core/Link';
+import {Link} from '@material-ui/core/Link';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
@@ -13,6 +13,10 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Rating from '@material-ui/lab/Rating';
+import axios from 'axios';
+import { ADD_RATING, PLACEHOLDER, GET_TOKEN } from "../constants";
+import { useHistory } from "react-router-dom";
+
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -34,9 +38,21 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Login() {
+export default function CreatePost() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+  const [movieId, setMovieId] = useState(0);
+  let history = useHistory();
+
+  function postMovie() {
+    let req = {
+        media_id: movieId,
+        rating: value
+    }
+    history.push("/home")
+    axios.post(ADD_RATING,(req))
+        .then(res => console.log(JSON.stringify(res)));
+  }
 
   return (
     <Container component="main" maxWidth="xs">
@@ -45,16 +61,18 @@ export default function Login() {
         <Typography component="h1" variant="h5">
           Make Post
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form} noValidate onSubmit={postMovie}>
           <TextField
             variant="outlined"
             margin="normal"
+            value={movieId}
+            onInput={ e=>setMovieId(e.target.value)}
             required
             fullWidth
-            id="title"
-            label="Title"
-            name="title"
-            autoComplete="title"
+            id="id"
+            label="Movie ID"
+            name="movieID"
+            autoComplete="Movie ID"
           />
           <div>
             <Box component="fieldset" mb={3} borderColor="transparent">

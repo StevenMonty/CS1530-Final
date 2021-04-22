@@ -14,6 +14,7 @@ import { DataGrid } from '@material-ui/data-grid';
 import { ADD_FRIEND, SEARCH, PLACEHOLDER } from "../constants";
 
 const columns = [
+  { field: 'id', headerName: 'Movie ID', width: 200 },
   { field: 'title', headerName: 'Movie Title', width: 700 },
   { field: 'rating', headerName: 'Rating', width: 300 },
 ];
@@ -48,8 +49,7 @@ const userColumns = [
     valueGetter: (params) =>
       `${params.getValue('first_name') || ''} ${params.getValue('last_name') || ''}`,
   },
-  // { field: 'first_name', headerName: 'First name', width: 180 },
-  // { field: 'last_name', headerName: 'Last name', width: 180 },
+
   { field: 'email', headerName: 'Email', width: 180 },
   { field: 'lib_size', headerName: 'Library Size', width: 150 },
   { field: 'friend_count', headerName: 'Friends', width: 150 },
@@ -60,7 +60,7 @@ const userColumns = [
           params.getValue('username')
         },
         renderCell: () => (
-          <button onClick={event => addFriend(event)}>
+          <button onClick={event => addFriend("montalbano")}>
             Send Request
           </button>
         ),
