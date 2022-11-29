@@ -1,6 +1,8 @@
 # Libros
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/18b62f99080d4618bfe69376462b7d00)](https://www.codacy.com/gh/StevenMonty/CS1530-Final/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=StevenMonty/CS1530-Final&amp;utm_campaign=Badge_Grade)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/642d72b99c5f4b98ba84dce45ffc8bac)](https://app.codacy.com/gh/StevenMonty/CS1530-Final?utm_source=github.com&utm_medium=referral&utm_content=StevenMonty/CS1530-Final&utm_campaign=Badge_Grade_Settings)
+
 ## Run Locally
 1. Run `./initEnv.sh`
 1. Run `./runDjango.sh`
